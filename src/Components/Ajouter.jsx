@@ -80,7 +80,7 @@ export default function Ajouter() {
        {error && <p>{TitreErr}</p>}
 
 
-      <label className="ajouter-label">Description</label>
+      <label className="ajouter-label">Descriptions</label>
       <input onChange={HandleChange} type="text" name='description' value={task.description} className="ajouter-input" />
        {error && <p>{DesErr}</p>}
       <label className="ajouter-label">Priority</label>
