@@ -1,0 +1,64 @@
+/* Container principal */
+.ajouter-container {
+  max-width: 420px;
+  
+  margin: 80px auto;
+  padding: 26px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: scale(0.9);
+}
+
+/* Labels */
+.ajouter-label {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs et Selects */
+.ajouter-input,
+.ajouter-select {
+  padding: 10px 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.ajouter-input:focus,
+.ajouter-select:focus {
+  border-color: #4caf50;
+}
+
+/* Bouton Ajouter */
+.btn-ajouter {
+  margin-top: 12px;
+  padding: 12px;
+  background: #2ecc71;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-ajouter:hover {
+  background: #27ae60;
+}
+
+
+.ajouter-container p {
+    height: 0px;
+    color: red;
+    margin-top: -8px;
+    font-size: 12px;
+    margin-left: 4px;
+}
