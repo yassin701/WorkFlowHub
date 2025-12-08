@@ -13,9 +13,10 @@ function App() {
         <Route path="/" element={<Login/>} />
         <Route path="/Home" element={<Home />} />
         <Route path="/Corbeille" element={<Corbeille />} />
+             <Toaster position="top-center" richColors />
+               <Ajouter/>
    </Routes>
   </BrowserRouter>
   )
 
-}
 export default App
