@@ -1,15 +1,22 @@
-import { useState } from 'react'
+import Home from './pages/Home'
+import Corbeille from './pages/Corbeille'
+import Login from './pages/login'
 import './App.css'
-import Ajouter from './Components/Ajouter'
-import { Toaster } from 'sonner'
+import { BrowserRouter ,Routes, Route } from 'react-router-dom'
+
 
 function App() {
   return(
-    <>
-      <Toaster position="top-center" richColors />
-    <Ajouter/>
-    </>
-    
+  <BrowserRouter>
+   <Routes>
+
+        <Route path="/" element={<Login/>} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Corbeille" element={<Corbeille />} />
+             <Toaster position="top-center" richColors />
+               <Ajouter/>
+   </Routes>
+  </BrowserRouter>
   )
-}
+
 export default App
