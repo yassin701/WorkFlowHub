@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './Ajouter.css'
 import { toast } from 'sonner'
 import axios from 'axios'
-export default function Ajouter() {
+export default function Ajouter({onClose}) {
   const [task,setTask] = useState({
     title : "",
     description : "",
@@ -66,6 +66,7 @@ export default function Ajouter() {
    setDesErr('')
    setPriorityErr('')
    setStatusErr('')
+   onClose()
    
   }
  }
@@ -81,7 +82,7 @@ export default function Ajouter() {
 
 
       <label className="ajouter-label">Descriptions</label>
-      <input onChange={HandleChange} type="text" name='description' value={task.description} className="ajouter-input" />
+      <textarea onChange={HandleChange} type="text" name='description' value={task.description} className="ajouter-input" />
        {error && <p>{DesErr}</p>}
       <label className="ajouter-label">Priority</label>
       <select onChange={HandleChange} name='priority' className="ajouter-select" value={task.priority}>
@@ -100,7 +101,7 @@ export default function Ajouter() {
       </select>
       {error && <p>{StatusErr}</p>}
      
-      <button className="btn-ajouter" onClick={AddTask}>Add Task</button>
+      <button className="btn-ajouter"  onClick={AddTask}>Add Task</button>
     </div>
   )
 }

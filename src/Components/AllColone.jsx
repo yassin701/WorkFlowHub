@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 
-export default function AllClone() {
+export default function AllClone({reload}) {
   const [tasks, setTasks] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -14,7 +14,7 @@ export default function AllClone() {
       .then(res => setTasks(res.data))
       .catch(err => console.log(err))
       .finally(()=>setLoading(false));
-  }, []);
+  }, [reload]);
 
 
 
