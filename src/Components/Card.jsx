@@ -2,6 +2,9 @@ import { useState } from 'react';
 import './Card.css';
 import Modifier from './Modifier';
 import { Draggable } from '@hello-pangea/dnd';
+import {FaTrash , FaPen  } from "react-icons/fa";
+
+
 
 export default function Card({ task, index }) {
   const [showEditPopUp, setShowEditPopUp] = useState(false);
@@ -21,17 +24,25 @@ export default function Card({ task, index }) {
           {showEditPopUp ? (
             <Modifier />
           ) : (
-            <p 
-                 className={`Card ${
-                    task.priority === 'high'
-                      ? 'high'
-                      : task.priority === 'low'
-                      ? 'low'
-                      : 'medium'
-                  }`}
-                             onClick={handleClick}>
-              {task.title}
-            </p>
+            <>
+              <p 
+                  className={`Card ${
+                      task.priority === 'high'
+                        ? 'high'
+                        : task.priority === 'low'
+                        ? 'low'
+                        : 'medium'
+                    }`}
+                              onClick={handleClick}>
+                {task.title}
+
+                <span>
+                    <FaPen  className="editIcon"  />
+                    {/* <FaTrash className="trashIcon"  /> */}
+
+                </span>
+              </p>
+            </>
           )}
         </div>
       )}
