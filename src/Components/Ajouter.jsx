@@ -75,6 +75,8 @@ export default function Ajouter({ onClose }) {
 
 
   return (
+    <>
+    <div className='overlay'></div>
     <div className="ajouter-container">
       <button
         className="close-btn"
@@ -109,5 +111,6 @@ export default function Ajouter({ onClose }) {
 
       <button className="btn-ajouter" onClick={AddTask}>Add Task</button>
     </div>
+    </>
   )
 }
