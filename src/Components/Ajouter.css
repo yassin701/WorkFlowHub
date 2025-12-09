@@ -1,7 +1,7 @@
 /* Container principal */
 .ajouter-container {
   max-width: 420px;
-  
+
   margin: 80px auto;
   padding: 26px;
   background: #ffffff;
@@ -12,6 +12,19 @@
   gap: 14px;
   font-family: Arial, Helvetica, sans-serif;
   transform: scale(0.9);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 /* Labels */
