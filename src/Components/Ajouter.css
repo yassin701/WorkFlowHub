@@ -32,6 +32,19 @@
   left: 0;
 }
 
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
 /* Labels */
 .ajouter-label {
   font-weight: 600;
