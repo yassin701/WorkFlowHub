@@ -91,7 +91,7 @@ input {
   width: 95%;
   padding: 10px;
   margin-top: 5px;
-  border: 1px solid #ccc;
+  border: 0.5px solid #ccc;
   border-radius: 6px;
   outline: none;
   transition: 0.2s;
@@ -150,20 +150,32 @@ input:focus {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Add this to your CSS file */
-.loading {
-    color: #fff;               /* white text */
-    background-color: #007bff; /* blue background */
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
-    margin: 10px 0;
-    animation: blink 1s infinite; /* optional blinking effect */
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
 }
 
-/* Optional blinking animation */
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
+.loader-mini {
+    width: 22px;
+    height: 22px;
+    border: 3px solid #ccc;
+    border-top-color: #3498db;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
 }
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
