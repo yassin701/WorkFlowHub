@@ -1,7 +1,10 @@
-*{
-  margin: 0;
-  padding: 0;
+body{
+    font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
+
+
 
 .All-btn{
   display: flex;
@@ -12,6 +15,9 @@
 }
 
 .btn-1{
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   padding: 12px;
   border: 0;
   background-color:rgb(127, 159, 79);
@@ -19,8 +25,13 @@
   color: white;
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.2s ease;
+  font-size: 16px;
 }
 .btn-2{
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
   padding: 12px;
   border: 0;
   background-color:rgb(255, 0, 0);

@@ -1,0 +1,20 @@
+
+.Card{
+    background-color: #dcdcdc;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Card:hover{
+    background-color: #dcdcdcd9;
+    opacity:0.9 ;
+}
+.high{
+    border-left: 4px solid red;
+}
+.low{
+    border-left: 4px solid green;
+}
+.medium{
+    border-left: 4px solid rgb(236, 111, 8);
+}

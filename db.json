@@ -1,131 +1,126 @@
 {
   "tasks": [
     {
-      "id": "d2b2",
-      "title": "task 1",
-      "description": "description task 1",
+      "id": "1",
+      "title": "Fix homepage UI",
+      "description": "Improve the hero section and adjust the responsive layout.",
+      "priority": "high",
+      "status": "To Do",
+      "order": 1
+    },
+    {
+      "id": "2",
+      "title": "Write product descriptions",
+      "description": "Add detailed descriptions for the new t-shirt collection.",
       "priority": "medium",
-      "status": "To Do"
+      "status": "In Progress",
+      "order": 1
     },
     {
-      "id": "9df9",
-      "title": "",
-      "description": "",
-      "priority": "",
-      "status": "To Do"
+      "id": "3",
+      "title": "Optimize images",
+      "description": "Compress and resize large images for faster loading.",
+      "priority": "low",
+      "status": "Done",
+      "order": 0
     },
     {
-      "id": "995b",
-      "title": "test",
-      "description": "test bio",
-      "priority": "",
-      "status": "To Do"
-    },
-    {
-      "id": "d23d",
-      "title": "test2",
-      "description": "bio 2",
-      "priority": "moyen",
-      "status": "A faire"
-    },
-    {
-      "id": "27d6",
-      "title": "nnn",
-      "description": "ggg",
-      "priority": "moyen",
-      "status": "To Do"
-    },
-    {
-      "id": "7804",
-      "title": "test22",
-      "description": "bio 22",
-      "priority": "",
-      "status": "To Do"
-    },
-    {
-      "id": "ce8a",
-      "title": "jj",
-      "description": "hhh",
-      "priority": "Urgent",
-      "status": "To Do"
-    },
-    {
-      "id": "8f6f",
-      "title": "",
-      "description": "",
-      "priority": "Urgent",
-      "status": "To Do"
-    },
-    {
-      "id": "93b2",
-      "title": "HH",
-      "description": "ss",
+      "id": "4",
+      "title": "Create login API",
+      "description": "Implement authentication using JWT and cookies.",
       "priority": "high",
-      "status": "To Do"
+      "status": "In Progress",
+      "order": 2
     },
     {
-      "id": "67f9",
-      "title": "TASK 10",
-      "description": "DESCRIPTION",
+      "id": "5",
+      "title": "Fix mobile navbar",
+      "description": "Resolve toggle animation issue on small screens.",
+      "priority": "medium",
+      "status": "To Do",
+      "order": 0
+    },
+    {
+      "id": "7",
+      "title": "Add loading animation",
+      "description": "Implement a smooth loading animation using Tailwind.",
+      "priority": "low",
+      "status": "In Progress",
+      "order": 3
+    },
+    {
+      "id": "8",
+      "title": "Create contact form",
+      "description": "Add form with validation using react-hook-form and Yup.",
+      "priority": "medium",
+      "status": "In Progress",
+      "order": 4
+    },
+    {
+      "id": "9",
+      "title": "Fix search results",
+      "description": "Display search results as cards with clean UI.",
+      "priority": "medium",
+      "status": "To Do",
+      "order": 2
+    },
+    {
+      "id": "10",
+      "title": "Deploy website",
+      "description": "Host the Next.js app on Vercel and test production build.",
       "priority": "high",
-      "status": "To Do"
+      "status": "In Progress",
+      "order": 5
     },
     {
-      "id": "57c0",
-      "title": "XX",
-      "description": "GGG",
-      "priority": "Low",
-      "status": "To Do"
-    },
-    {
-      "id": "66ba",
-      "title": "marouane",
-      "description": "abderrahmane",
+      "id": "2ba0",
+      "title": "Test",
+      "description": "Test",
       "priority": "high",
-      "status": "To Do"
+      "status": "To Do",
+      "order": 3
     },
     {
-      "id": "d3f5",
-      "title": "marwaaaane",
-      "description": "jijiunjnjnjnjn",
+      "id": "c140",
+      "title": "Test 2",
+      "description": "test bio 2",
       "priority": "high",
-      "status": "To Do"
+      "status": "To Do",
+      "order": 4
     },
     {
-      "id": "405c",
-      "title": "tiitle",
-      "description": "anglais",
+      "id": "c3bc",
+      "title": "test 3",
+      "description": "test bio 3",
       "priority": "high",
-      "status": "To Do"
+      "status": "To Do",
+      "order": 5
     },
     {
-      "id": "02a2",
-      "title": "empty",
-      "description": "empty tasks",
+      "id": "f037",
+      "title": "Done 1",
+      "description": "bio 1",
       "priority": "high",
-      "status": "To Do"
+      "status": "Done"
     },
     {
-      "id": "ed93",
-      "title": "ee",
-      "description": "dd",
+      "id": "f970",
+      "title": "test 4",
+      "description": "bio 4",
       "priority": "high",
-      "status": "To Do"
+      "status": "To Do",
+      "order": 6
+    },
+    {
+      "id": "f9e6",
+      "title": "done 2",
+      "description": "bio done 2",
+      "priority": "high",
+      "status": "Done"
     }
   ],
-   "user":{
-  "email":"workflowhub1@gmail.com",
-  "password": "123456aa"
-    }
+  "user": {
+    "email": "workflowhub1@gmail.com",
+    "password": "123456aa"
+  }
 }
-
-
-
-
-
-
-
-
-
-
-

@@ -5,10 +5,9 @@ import { Toaster } from 'sonner'
 import './App.css'
 import { BrowserRouter ,Routes, Route } from 'react-router-dom'
 
-import Ajouter from './Components/Ajouter'
-
 function App() {
   return(
+  
   <BrowserRouter>
    <Toaster position="top-center" richColors />
    <Routes>
@@ -18,7 +17,6 @@ function App() {
         <Route path="/Corbeille" element={<Corbeille />} />
    </Routes>
   </BrowserRouter>
-  // <Ajouter/>
   )
 }
 
