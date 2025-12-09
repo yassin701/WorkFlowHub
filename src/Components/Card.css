@@ -1,6 +1,6 @@
 
 .Card{
-    background-color: #dcdcdc;
+    background-color: #dcdcdc; 
     padding: 5px 20px;
     border-radius: 10px;
     cursor: pointer;
@@ -9,6 +9,15 @@
     background-color: #dcdcdcd9;
     opacity:0.9 ;
 }
+.Card {
+    position: relative;
+}
+.Card span{
+    position: absolute;
+    top: -6px;
+    right: 1px;
+}
+
 .high{
     border-left: 4px solid red;
 }
@@ -17,4 +26,16 @@
 }
 .medium{
     border-left: 4px solid rgb(236, 111, 8);
+}
+.editIcon{
+    width: 10px;
+    background-color: black;
+    padding: 3px 6px;
+    border-radius: 6px;
+    color: white;
+}
+.editIcon:hover{
+    width: 12px;
+    transform: scale(1.09);
+    transition: all 2000ms ease-in ;
 }
