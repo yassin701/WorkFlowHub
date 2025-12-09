@@ -6,7 +6,7 @@
       "description": "Improve the hero section and adjust the responsive layout.",
       "priority": "high",
       "status": "To Do",
-      "order": 1
+      "order": 4
     },
     {
       "id": "2",
@@ -14,7 +14,7 @@
       "description": "Add detailed descriptions for the new t-shirt collection.",
       "priority": "medium",
       "status": "In Progress",
-      "order": 1
+      "order": 0
     },
     {
       "id": "3",
@@ -30,7 +30,7 @@
       "description": "Implement authentication using JWT and cookies.",
       "priority": "high",
       "status": "In Progress",
-      "order": 2
+      "order": 1
     },
     {
       "id": "5",
@@ -38,7 +38,7 @@
       "description": "Resolve toggle animation issue on small screens.",
       "priority": "medium",
       "status": "To Do",
-      "order": 0
+      "order": 5
     },
     {
       "id": "7",
@@ -46,7 +46,7 @@
       "description": "Implement a smooth loading animation using Tailwind.",
       "priority": "low",
       "status": "In Progress",
-      "order": 3
+      "order": 2
     },
     {
       "id": "8",
@@ -54,15 +54,15 @@
       "description": "Add form with validation using react-hook-form and Yup.",
       "priority": "medium",
       "status": "In Progress",
-      "order": 4
+      "order": 3
     },
     {
       "id": "9",
       "title": "Fix search results",
       "description": "Display search results as cards with clean UI.",
       "priority": "medium",
-      "status": "To Do",
-      "order": 2
+      "status": "Done",
+      "order": 3
     },
     {
       "id": "10",
@@ -70,49 +70,55 @@
       "description": "Host the Next.js app on Vercel and test production build.",
       "priority": "high",
       "status": "In Progress",
-      "order": 5
+      "order": 4
     },
     {
       "id": "2ba0",
       "title": "Test",
       "description": "Test",
       "priority": "high",
-      "status": "To Do"
+      "status": "To Do",
+      "order": 0
     },
     {
       "id": "c140",
       "title": "Test 2",
       "description": "test bio 2",
       "priority": "high",
-      "status": "To Do"
+      "status": "To Do",
+      "order": 1
     },
     {
       "id": "c3bc",
       "title": "test 3",
       "description": "test bio 3",
       "priority": "high",
-      "status": "To Do"
+      "status": "To Do",
+      "order": 2
     },
     {
       "id": "f037",
       "title": "Done 1",
       "description": "bio 1",
       "priority": "high",
-      "status": "Done"
+      "status": "Done",
+      "order": 1
     },
     {
       "id": "f970",
       "title": "test 4",
       "description": "bio 4",
       "priority": "high",
-      "status": "To Do"
+      "status": "To Do",
+      "order": 3
     },
     {
       "id": "f9e6",
       "title": "done 2",
       "description": "bio done 2",
       "priority": "high",
-      "status": "Done"
+      "status": "Done",
+      "order": 2
     }
   ],
   "user": {
