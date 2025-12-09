@@ -4,8 +4,6 @@ import Login from './pages/login'
 import { Toaster } from 'sonner'
 import './App.css'
 import { BrowserRouter ,Routes, Route } from 'react-router-dom'
-import { Toaster } from 'sonner';
-import Ajouter from './Components/Ajouter'
 
 function App() {
   return(
@@ -19,7 +17,6 @@ function App() {
         <Route path="/Corbeille" element={<Corbeille />} />
    </Routes>
   </BrowserRouter>
-  // <Ajouter/>
   )
 }
 
