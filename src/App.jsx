@@ -1,8 +1,11 @@
 import { useState } from 'react'
 import './App.css'
+import AllClone from './Components/AllColone'
 
 
 function App() {
-  return
+  return(
+    <AllClone/>
+  )
 }
 export default App
