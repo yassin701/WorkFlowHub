@@ -12,12 +12,11 @@
   font-family: Arial, Helvetica, sans-serif;
   transform: scale(0.9);
   position: fixed;
-  top: 80px;
+  top: 20px;
   bottom: 80px;
   left: 380px;
   z-index: 999;
-
-   
+  height: 90vh;   
 }
 
 .overlay{
@@ -35,8 +34,7 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  background: red;
-  color: white;
+  color: #000;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
@@ -91,4 +89,21 @@
     margin-top: -8px;
     font-size: 12px;
     margin-left: 4px;
+}
+
+.ajouter-textarea {
+  width: 95%;        /* prend toute la largeur du container */
+  min-height: 100px;  /* hauteur minimum */
+  padding: 10px;      /* espace à l’intérieur */
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;   /* permet d’agrandir verticalement */
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.ajouter-textarea:focus {
+  border-color: #ff4d4f;
+  box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
 }

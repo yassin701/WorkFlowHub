@@ -1,0 +1,33 @@
+.buttons-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-update {
+  background-color: #007bff; /* bleu */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-update:hover {
+  background-color: #0056b3;
+}
+
+.btn-delete {
+  background-color: #e63946; /* rouge */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-delete:hover {
+  background-color: #b51f2a;
+}

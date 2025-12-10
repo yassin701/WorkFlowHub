@@ -5,11 +5,11 @@ import { Draggable } from '@hello-pangea/dnd';
 
 
 
-export default function Card({ task, index }) {
+export default function Card({ task, index, onEdit }) {
   const [showEditPopUp, setShowEditPopUp] = useState(false);
 
   const handleClick = () => {
-    setShowEditPopUp(true);
+   if(onEdit) onEdit(task);
   };
 
   return (
@@ -20,9 +20,7 @@ export default function Card({ task, index }) {
           {...provided.draggableProps}
           {...provided.dragHandleProps}
         >
-          {showEditPopUp ? (
-            <Modifier />
-          ) : (
+          
             <>
               <p 
                   className={`Card ${
@@ -37,10 +35,10 @@ export default function Card({ task, index }) {
                               onClick={handleClick}>
                 {task.title}
 
-                
+               
               </p>
             </>
-          )}
+          
         </div>
       )}
     </Draggable>
