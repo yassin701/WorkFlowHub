@@ -31,7 +31,9 @@ export default function Card({ task, index }) {
                         : task.priority === 'low'
                         ? 'low'
                         : 'medium'
-                    }`}
+                      }
+                      ${task.status==='Done'?'DoneCard':''}`
+                  }
                               onClick={handleClick}>
                 {task.title}
 
