@@ -6,7 +6,7 @@
       "description": "Improve the hero section and adjust the responsive layout.",
       "priority": "high",
       "status": "To Do",
-      "order": 1
+      "order": 0
     },
     {
       "id": "2",
@@ -14,7 +14,7 @@
       "description": "Add detailed descriptions for the new t-shirt collection.",
       "priority": "medium",
       "status": "In Progress",
-      "order": 0
+      "order": 1
     },
     {
       "id": "3",
@@ -22,22 +22,22 @@
       "description": "Compress and resize large images for faster loading.",
       "priority": "low",
       "status": "Done",
-      "order": 4
+      "order": 0
     },
     {
       "id": "4",
       "title": "Create login API",
       "description": "Implement authentication using JWT and cookies.",
       "priority": "high",
-      "status": "Done",
-      "order": 1
+      "status": "In Progress",
+      "order": 2
     },
     {
       "id": "5",
       "title": "Fix mobile navbar",
       "description": "Resolve toggle animation issue on small screens.",
       "priority": "medium",
-      "status": "To Do",
+      "status": "In Progress",
       "order": 0
     },
     {
@@ -46,7 +46,7 @@
       "description": "Implement a smooth loading animation using Tailwind.",
       "priority": "low",
       "status": "In Progress",
-      "order": 1
+      "order": 3
     },
     {
       "id": "8",
@@ -61,7 +61,7 @@
       "title": "Fix search results",
       "description": "Display search results as cards with clean UI.",
       "priority": "medium",
-      "status": "In Progress",
+      "status": "To Do",
       "order": 2
     },
     {
@@ -69,8 +69,8 @@
       "title": "Deploy website",
       "description": "Host the Next.js app on Vercel and test production build.",
       "priority": "high",
-      "status": "Done",
-      "order": 3
+      "status": "In Progress",
+      "order": 5
     },
     {
       "id": "2ba0",
@@ -101,8 +101,7 @@
       "title": "Done 1",
       "description": "bio 1",
       "priority": "high",
-      "status": "Done",
-      "order": 0
+      "status": "Done"
     },
     {
       "id": "f970",
@@ -117,13 +116,19 @@
       "title": "done 2",
       "description": "bio done 2",
       "priority": "high",
-      "status": "Done",
-      "order": 2
+      "status": "Done"
     },
     {
-      "id": "283e",
-      "title": "test12",
-      "description": "test",
+      "id": "e1b6",
+      "title": "Finish Home",
+      "description": "Home Page is Finished",
+      "priority": "moyen",
+      "status": "Done"
+    },
+    {
+      "id": "dee8",
+      "title": "To Do",
+      "description": "To Do",
       "priority": "high",
       "status": "In Progress",
       "order": 4

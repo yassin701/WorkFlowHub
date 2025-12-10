@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './Card.css';
 import Modifier from './Modifier';
 import { Draggable } from '@hello-pangea/dnd';
-import {FaTrash , FaPen  } from "react-icons/fa";
 
 
 
@@ -32,15 +31,13 @@ export default function Card({ task, index }) {
                         : task.priority === 'low'
                         ? 'low'
                         : 'medium'
-                    }`}
+                      }
+                      ${task.status==='Done'?'DoneCard':''}`
+                  }
                               onClick={handleClick}>
                 {task.title}
 
-                <span>
-                    <FaPen  className="editIcon"  />
-                    {/* <FaTrash className="trashIcon"  /> */}
-
-                </span>
+                
               </p>
             </>
           )}

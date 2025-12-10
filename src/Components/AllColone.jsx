@@ -114,17 +114,19 @@ const done = tasks.filter(t => t.status === "Done")
                         <Droppable droppableId="To Do">
                         {(provided) => (
                             <div className='Column' ref={provided.innerRef} {...provided.droppableProps}>
-                            <div className="toDo">
-                                <h2>To Do</h2>
-                                <p>{toDo.length > 0 ? '+' : ''}{toDo.length}</p>
-                            </div>
-                            <div className="siperate"></div>
-                            <div className="cards">
-                                {toDo.length > 0 ? toDo.map((task, index) => (
-                                <Card key={task.id} task={task} index={index} />
-                                )) : <p>No task</p>}
-                                {provided.placeholder}
-                            </div>
+                                <div className="ColumnHeader">
+                                    <div className="toDo">
+                                        <h2>To Do</h2>
+                                        <p>{toDo.length > 0 ? '+' : ''}{toDo.length}</p>
+                                    </div>
+                                    <div className="siperate"></div>
+                                </div>
+                                <div className="cards">
+                                    {toDo.length > 0 ? toDo.map((task, index) => (
+                                    <Card key={task.id} task={task} index={index} />
+                                    )) : <p>No task</p>}
+                                    {provided.placeholder}
+                                </div>
                             </div>
                         )}
                         </Droppable>
@@ -133,17 +135,19 @@ const done = tasks.filter(t => t.status === "Done")
                         <Droppable droppableId="In Progress">
                         {(provided) => (
                             <div className='Column' ref={provided.innerRef} {...provided.droppableProps}>
-                            <div className="Progress">
-                                <h2>In Progress</h2>
-                                <p>{inProgress.length > 0 ? '+' : ''}{inProgress.length}</p>
-                            </div>
-                            <div className="siperate"></div>
-                            <div className="cards">
-                                {inProgress.length > 0 ? inProgress.map((task, index) => (
-                                <Card key={task.id} task={task} index={index} />
-                                )) : <p>No task</p>}
-                                {provided.placeholder}
-                            </div>
+                                <div className="ColumnHeader">
+                                    <div className="Progress">
+                                        <h2>In Progress</h2>
+                                        <p>{inProgress.length > 0 ? '+' : ''}{inProgress.length}</p>
+                                    </div>
+                                    <div className="siperate"></div>
+                                </div>
+                                <div className="cards">
+                                    {inProgress.length > 0 ? inProgress.map((task, index) => (
+                                    <Card key={task.id} task={task} index={index} />
+                                    )) : <p>No task</p>}
+                                    {provided.placeholder}
+                                </div>
                             </div>
                         )}
                         </Droppable>
@@ -152,17 +156,19 @@ const done = tasks.filter(t => t.status === "Done")
                         <Droppable droppableId="Done">
                         {(provided) => (
                             <div className='Column' ref={provided.innerRef} {...provided.droppableProps}>
-                            <div className="Done">
-                                <h2>Done</h2>
-                                <p>{done.length > 0 ? '+' : ''}{done.length}</p>
-                            </div>
-                            <div className="siperate"></div>
-                            <div className="cards">
-                                {done.length > 0 ? done.map((task, index) => (
-                                <Card key={task.id} task={task} index={index} />
-                                )) : <p>No task</p>}
-                                {provided.placeholder}
-                            </div>
+                                <div className="ColumnHeader">
+                                    <div className="Done">
+                                        <h2>Done</h2>
+                                        <p>{done.length > 0 ? '+' : ''}{done.length}</p>
+                                    </div>
+                                    <div className="siperate"></div>
+                                </div>
+                                <div className="cards">
+                                    {done.length > 0 ? done.map((task, index) => (
+                                    <Card key={task.id} task={task} index={index} />
+                                    )) : <p>No task</p>}
+                                    {provided.placeholder}
+                                </div>
                             </div>
                         )}
                         </Droppable>
