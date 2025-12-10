@@ -4,9 +4,9 @@
       "id": "1",
       "title": "Fix homepage UI",
       "description": "Improve the hero section and adjust the responsive layout.",
-      "priority": "high",
-      "status": "To Do",
-      "order": 4
+      "priority": "moyen",
+      "status": "In Progress",
+      "order": 1
     },
     {
       "id": "2",
@@ -14,7 +14,7 @@
       "description": "Add detailed descriptions for the new t-shirt collection.",
       "priority": "medium",
       "status": "In Progress",
-      "order": 0
+      "order": 2
     },
     {
       "id": "3",
@@ -22,23 +22,23 @@
       "description": "Compress and resize large images for faster loading.",
       "priority": "low",
       "status": "Done",
-      "order": 0
+      "order": 3
     },
     {
       "id": "4",
       "title": "Create login API",
       "description": "Implement authentication using JWT and cookies.",
       "priority": "high",
-      "status": "In Progress",
-      "order": 1
+      "status": "To Do",
+      "order": 2
     },
     {
       "id": "5",
-      "title": "Fix mobile navbar",
-      "description": "Resolve toggle animation issue on small screens.",
+      "title": "Fix mobile navbar v1",
+      "description": "Resolve toggle animation issue on small screen",
       "priority": "medium",
-      "status": "To Do",
-      "order": 5
+      "status": "Done",
+      "order": 2
     },
     {
       "id": "7",
@@ -46,15 +46,15 @@
       "description": "Implement a smooth loading animation using Tailwind.",
       "priority": "low",
       "status": "In Progress",
-      "order": 2
+      "order": 4
     },
     {
       "id": "8",
       "title": "Create contact form",
       "description": "Add form with validation using react-hook-form and Yup.",
       "priority": "medium",
-      "status": "In Progress",
-      "order": 3
+      "status": "Done",
+      "order": 5
     },
     {
       "id": "9",
@@ -62,7 +62,7 @@
       "description": "Display search results as cards with clean UI.",
       "priority": "medium",
       "status": "Done",
-      "order": 3
+      "order": 1
     },
     {
       "id": "10",
@@ -74,10 +74,10 @@
     },
     {
       "id": "2ba0",
-      "title": "Test",
+      "title": "Test 2222",
       "description": "Test",
-      "priority": "high",
-      "status": "To Do",
+      "priority": "moyen",
+      "status": "In Progress",
       "order": 0
     },
     {
@@ -93,8 +93,8 @@
       "title": "test 3",
       "description": "test bio 3",
       "priority": "high",
-      "status": "To Do",
-      "order": 2
+      "status": "In Progress",
+      "order": 3
     },
     {
       "id": "f037",
@@ -102,7 +102,7 @@
       "description": "bio 1",
       "priority": "high",
       "status": "Done",
-      "order": 1
+      "order": 4
     },
     {
       "id": "f970",
@@ -118,11 +118,27 @@
       "description": "bio done 2",
       "priority": "high",
       "status": "Done",
-      "order": 2
+      "order": 6
+    },
+    {
+      "id": "e1b6",
+      "title": "Finish Home",
+      "description": "Home Page is Finished",
+      "priority": "moyen",
+      "status": "Done",
+      "order": 7
+    },
+    {
+      "id": "dee8",
+      "title": "To Do",
+      "description": "To Do",
+      "priority": "high",
+      "status": "To Do",
+      "order": 4
     }
   ],
   "user": {
-    "email": "workflowhub1@gmail.com",
+    "email": "site1@gmail.com",
     "password": "123456aa"
   }
 }

@@ -3,11 +3,13 @@ import './Card.css';
 import Modifier from './Modifier';
 import { Draggable } from '@hello-pangea/dnd';
 
-export default function Card({ task, index }) {
+
+
+export default function Card({ task, index, onEdit }) {
   const [showEditPopUp, setShowEditPopUp] = useState(false);
 
   const handleClick = () => {
-    setShowEditPopUp(true);
+   if(onEdit) onEdit(task);
   };
 
   return (
@@ -18,21 +20,25 @@ export default function Card({ task, index }) {
           {...provided.draggableProps}
           {...provided.dragHandleProps}
         >
-          {showEditPopUp ? (
-            <Modifier />
-          ) : (
-            <p 
-                 className={`Card ${
-                    task.priority === 'high'
-                      ? 'high'
-                      : task.priority === 'low'
-                      ? 'low'
-                      : 'medium'
-                  }`}
-                             onClick={handleClick}>
-              {task.title}
-            </p>
-          )}
+          
+            <>
+              <p 
+                  className={`Card ${
+                      task.priority === 'high'
+                        ? 'high'
+                        : task.priority === 'low'
+                        ? 'low'
+                        : 'medium'
+                      }
+                      ${task.status==='Done'?'DoneCard':''}`
+                  }
+                              onClick={handleClick}>
+                {task.title}
+
+               
+              </p>
+            </>
+          
         </div>
       )}
     </Draggable>

@@ -1,14 +1,19 @@
 
 .Card{
-    background-color: #dcdcdc;
-    padding: 5px 20px;
+    background-color: #dcdcdc; 
+    padding: 20px 20px;
     border-radius: 10px;
     cursor: pointer;
+    font-size: 16px;
+    line-height: normal;
+    
 }
 .Card:hover{
     background-color: #dcdcdcd9;
     opacity:0.9 ;
 }
+
+
 .high{
     border-left: 4px solid red;
 }
@@ -17,4 +22,8 @@
 }
 .medium{
     border-left: 4px solid rgb(236, 111, 8);
+}
+
+.DoneCard{
+    text-decoration: 2px line-through ;
 }
