@@ -46,7 +46,7 @@
       "description": "Implement a smooth loading animation using Tailwind.",
       "priority": "low",
       "status": "In Progress",
-      "order": 1
+      "order": 3
     },
     {
       "id": "8",
@@ -117,13 +117,19 @@
       "title": "done 2",
       "description": "bio done 2",
       "priority": "high",
-      "status": "Done",
-      "order": 2
+      "status": "Done"
     },
     {
-      "id": "283e",
-      "title": "test12",
-      "description": "test",
+      "id": "e1b6",
+      "title": "Finish Home",
+      "description": "Home Page is Finished",
+      "priority": "moyen",
+      "status": "Done"
+    },
+    {
+      "id": "dee8",
+      "title": "To Do",
+      "description": "To Do",
       "priority": "high",
       "status": "To Do",
       "order": 4

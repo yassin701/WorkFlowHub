@@ -1,0 +1,75 @@
+
+
+.navbar{
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(7px);
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    gap: 390px;
+    z-index: 998;
+    padding-left: 33px;
+    
+    
+
+}
+
+.logo{
+    color: white;
+    margin-top: 0;
+    
+}
+
+.div-link{
+    display: flex;
+    gap: 35px;
+    margin-top: 10px;
+    font-size: small;
+}
+
+
+.home-link{
+    color: white;
+    transition: 0.5s;
+    
+}
+
+.home-link:hover{
+    background-color: white;
+    transition: 0.5s;
+    color: black;
+    height: 50%;
+}
+
+.trash-link{
+    color: white;
+    transition: 0.5s;
+}
+
+.trash-link:hover{
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+    height: 50%;
+}
+
+.to-home{
+    color: white;
+    text-decoration: none;
+}
+
+.to-home:hover{
+    color: black;
+}
+
+.to-corb{
+    color: white;
+    text-decoration: none;
+}
+
+.to-corb:hover{
+    color: black;
+}

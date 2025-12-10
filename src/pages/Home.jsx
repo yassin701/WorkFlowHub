@@ -31,16 +31,24 @@ export default function Home() {
   return (
     <>
     <div className='All-btn'>
+       <Avatar
+         
+           name={email}
+           round={true}
+           size="35"
+           color="#ffffffff"
+           textSizeRatio={2}
+            fgColor="#000000ff"
+           
+           className='avatar'
+           
+        />
         <button onClick={handleShow} className='btn-1'>
         <FaPlus className="icon" />
           Add Task
         </button>
 
-        <button onClick={() => Navigate("/Corbeille")}
-        className='btn-2'>
-        <FaTrash className='icon'/>
-          Trash
-        </button>
+       
 
     </div>
 
