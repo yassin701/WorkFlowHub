@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 
-export default function AllClone({reload}) {
+export default function AllClone({reload , onEdit}) {
   const [tasks, setTasks] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -121,7 +121,7 @@ const done = tasks.filter(t => t.status === "Done")
                             <div className="siperate"></div>
                             <div className="cards">
                                 {toDo.length > 0 ? toDo.map((task, index) => (
-                                <Card key={task.id} task={task} index={index} />
+                                <Card key={task.id} task={task} index={index} onEdit={onEdit}  />
                                 )) : <p>No task</p>}
                                 {provided.placeholder}
                             </div>
@@ -140,7 +140,7 @@ const done = tasks.filter(t => t.status === "Done")
                             <div className="siperate"></div>
                             <div className="cards">
                                 {inProgress.length > 0 ? inProgress.map((task, index) => (
-                                <Card key={task.id} task={task} index={index} />
+                                <Card key={task.id} task={task} index={index} onEdit={onEdit} />
                                 )) : <p>No task</p>}
                                 {provided.placeholder}
                             </div>
@@ -159,7 +159,7 @@ const done = tasks.filter(t => t.status === "Done")
                             <div className="siperate"></div>
                             <div className="cards">
                                 {done.length > 0 ? done.map((task, index) => (
-                                <Card key={task.id} task={task} index={index} />
+                                <Card key={task.id} task={task} index={index} onEdit={onEdit}  />
                                 )) : <p>No task</p>}
                                 {provided.placeholder}
                             </div>

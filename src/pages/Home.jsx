@@ -4,11 +4,15 @@ import { useNavigate } from 'react-router-dom'
 import { FaPlus , FaTrash} from "react-icons/fa";
 import Ajouter from '../Components/Ajouter';
 import AllColone from '../Components/AllColone'
+import Modifier from '../Components/Modifier';
 
 export default function Home() {
   const [showpopup, setShowpopup]= useState(false)
   const [reload, setReload]= useState(false)
+  const [taskToEdit , setTaskToEdit] =useState(null)
   const Navigate = useNavigate();
+
+
 
    const handleShow = () =>{
     setShowpopup(true);
@@ -19,6 +23,10 @@ export default function Home() {
     setReload(prev => !prev); 
   };
 
+  const handleCloseEdit = () =>{
+     setTaskToEdit(null);
+     setReload(prev => !prev);
+  };
   
   return (
     <>
@@ -39,9 +47,14 @@ export default function Home() {
     <br /><br /><br /><br />
 
     {showpopup && <Ajouter onClose={handleClosePopup}/>}
+
+    {taskToEdit &&(
+    <Modifier task={taskToEdit} onClose={handleCloseEdit}/>
+    )}
     
     <div>
-      <AllColone reload={reload}/>
+      <AllColone reload={reload} onEdit={(task) => setTaskToEdit(task)}/>
+      
     </div>
     </>
   )

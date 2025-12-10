@@ -85,12 +85,16 @@ export default function Ajouter({ onClose }) {
         X
       </button>
       <label className="ajouter-label">Title</label>
-      <input onChange={HandleChange} type="text" name='title' value={task.title} className="ajouter-input" />
+      <input onChange={HandleChange} type="text" name='title' value={task.title} className="ajouter-input" placeholder='Enter title...'/>
       {error && <p>{TitreErr}</p>}
 
 
       <label className="ajouter-label">Descriptions</label>
-      <textarea onChange={HandleChange} type="text" name='description' value={task.description} className="ajouter-input" />
+  <textarea
+  onChange={HandleChange}
+  name="description" value={task.description}  className="ajouter-textarea" placeholder="Enter description..."
+/>
+
       {error && <p>{DesErr}</p>}
       <label className="ajouter-label">Priority</label>
       <select onChange={HandleChange} name='priority' className="ajouter-select" value={task.priority}>

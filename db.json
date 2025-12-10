@@ -4,16 +4,16 @@
       "id": "1",
       "title": "Fix homepage UI",
       "description": "Improve the hero section and adjust the responsive layout.",
-      "priority": "high",
+      "priority": "moyen",
       "status": "To Do",
-      "order": 1
+      "order": 0
     },
     {
       "id": "2",
       "title": "Write product descriptions",
       "description": "Add detailed descriptions for the new t-shirt collection.",
       "priority": "medium",
-      "status": "In Progress",
+      "status": "Done",
       "order": 0
     },
     {
@@ -21,24 +21,24 @@
       "title": "Optimize images",
       "description": "Compress and resize large images for faster loading.",
       "priority": "low",
-      "status": "Done",
-      "order": 4
+      "status": "In Progress",
+      "order": 5
     },
     {
       "id": "4",
       "title": "Create login API",
       "description": "Implement authentication using JWT and cookies.",
       "priority": "high",
-      "status": "Done",
-      "order": 1
+      "status": "In Progress",
+      "order": 3
     },
     {
       "id": "5",
-      "title": "Fix mobile navbar",
-      "description": "Resolve toggle animation issue on small screens.",
+      "title": "Fix mobile navbar v1",
+      "description": "Resolve toggle animation issue on small screen",
       "priority": "medium",
-      "status": "To Do",
-      "order": 0
+      "status": "Done",
+      "order": 1
     },
     {
       "id": "7",
@@ -53,32 +53,32 @@
       "title": "Create contact form",
       "description": "Add form with validation using react-hook-form and Yup.",
       "priority": "medium",
-      "status": "In Progress",
-      "order": 4
+      "status": "Done",
+      "order": 1
     },
     {
       "id": "9",
       "title": "Fix search results",
       "description": "Display search results as cards with clean UI.",
       "priority": "medium",
-      "status": "In Progress",
-      "order": 2
+      "status": "Done",
+      "order": 0
     },
     {
       "id": "10",
       "title": "Deploy website",
       "description": "Host the Next.js app on Vercel and test production build.",
       "priority": "high",
-      "status": "Done",
-      "order": 3
+      "status": "In Progress",
+      "order": 4
     },
     {
       "id": "2ba0",
-      "title": "Test",
+      "title": "Test 2222",
       "description": "Test",
-      "priority": "high",
+      "priority": "moyen",
       "status": "To Do",
-      "order": 3
+      "order": 1
     },
     {
       "id": "c140",
@@ -86,22 +86,22 @@
       "description": "test bio 2",
       "priority": "high",
       "status": "To Do",
-      "order": 4
+      "order": 2
     },
     {
       "id": "c3bc",
       "title": "test 3",
       "description": "test bio 3",
       "priority": "high",
-      "status": "To Do",
-      "order": 5
+      "status": "In Progress",
+      "order": 2
     },
     {
       "id": "f037",
       "title": "Done 1",
       "description": "bio 1",
       "priority": "high",
-      "status": "Done",
+      "status": "In Progress",
       "order": 0
     },
     {
@@ -110,7 +110,7 @@
       "description": "bio 4",
       "priority": "high",
       "status": "To Do",
-      "order": 6
+      "order": 3
     },
     {
       "id": "f9e6",
@@ -125,8 +125,8 @@
       "title": "test12",
       "description": "test",
       "priority": "high",
-      "status": "In Progress",
-      "order": 5
+      "status": "To Do",
+      "order": 4
     }
   ],
   "user": {
