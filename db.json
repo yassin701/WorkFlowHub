@@ -70,7 +70,7 @@
       "description": "Host the Next.js app on Vercel and test production build.",
       "priority": "high",
       "status": "In Progress",
-      "order": 5
+      "order": 4
     },
     {
       "id": "2ba0",

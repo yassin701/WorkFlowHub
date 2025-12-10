@@ -12,6 +12,7 @@
   "dependencies": {
     "@hello-pangea/dnd": "^18.0.1",
     "axios": "^1.13.2",
+    "json-server": "^1.0.0-beta.3",
     "react": "^19.2.0",
     "react-avatar": "^5.0.4",
     "react-dom": "^19.2.0",
