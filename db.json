@@ -77,21 +77,24 @@
       "title": "Test",
       "description": "Test",
       "priority": "high",
-      "status": "To Do"
+      "status": "To Do",
+      "order": 3
     },
     {
       "id": "c140",
       "title": "Test 2",
       "description": "test bio 2",
       "priority": "high",
-      "status": "To Do"
+      "status": "To Do",
+      "order": 4
     },
     {
       "id": "c3bc",
       "title": "test 3",
       "description": "test bio 3",
       "priority": "high",
-      "status": "To Do"
+      "status": "To Do",
+      "order": 5
     },
     {
       "id": "f037",
@@ -105,7 +108,8 @@
       "title": "test 4",
       "description": "bio 4",
       "priority": "high",
-      "status": "To Do"
+      "status": "To Do",
+      "order": 6
     },
     {
       "id": "f9e6",
