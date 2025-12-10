@@ -2,7 +2,6 @@
 .ajouter-container {
   width: 420px;
   
-  /* margin: 80px auto; */
   padding: 26px;
   background: #ffffff;
   border-radius: 14px;
@@ -15,7 +14,6 @@
   position: fixed;
   top: 80px;
   bottom: 80px;
-  /* right: 150px; */
   left: 380px;
   z-index: 999;
 
@@ -30,6 +28,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 
 .close-btn {
