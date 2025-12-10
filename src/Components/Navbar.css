@@ -1,75 +1,68 @@
-
-
-.navbar{
-    background-color: rgb(0, 0, 0);
-    backdrop-filter: blur(7px);
-    height: 40px;
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    height: 60px;
+
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+
     display: flex;
-    gap: 390px;
-    z-index: 998;
-    padding-left: 33px;
-    
-    
+    align-items: center;
+    justify-content: space-between;
 
+    padding: 0 25px;
+    z-index: 999;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.logo{
+/* LOGO AT LEFT */
+.logo {
     color: white;
-    margin-top: 0;
-    
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 90px;
 }
 
-.div-link{
+/* CENTERED LINKS */
+.div-link {
+    position: absolute;     
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    gap: 35px;
-    margin-top: 10px;
-    font-size: small;
+    gap: 25px;
+    align-items: center;
+   
 }
 
-
-.home-link{
-    color: white;
-    transition: 0.5s;
-    
+/* LINKS STYLE */
+.home-link,
+.trash-link {
+    padding: 6px 14px;
+    border-radius: 8px;
+    transition: 0.3s ease; 
 }
 
-.home-link:hover{
-    background-color: white;
-    transition: 0.5s;
-    color: black;
-    height: 50%;
-}
-
-.trash-link{
-    color: white;
-    transition: 0.5s;
-}
-
-.trash-link:hover{
-    transition: 0.5s;
-    background-color: white;
-    color: black;
-    height: 50%;
-}
-
-.to-home{
+.to-home,
+.to-corb {
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
 }
 
-.to-home:hover{
+.home-link:hover,
+.trash-link:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.home-link:hover .to-home,
+.trash-link:hover .to-corb {
     color: black;
 }
 
-.to-corb{
-    color: white;
-    text-decoration: none;
-}
-
-.to-corb:hover{
-    color: black;
+.avatar {
+ margin-top: 10px;
 }

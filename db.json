@@ -5,31 +5,31 @@
       "title": "Fix homepage UI",
       "description": "Improve the hero section and adjust the responsive layout.",
       "priority": "moyen",
-      "status": "To Do",
-      "order": 0
+      "status": "In Progress",
+      "order": 1
     },
     {
       "id": "2",
       "title": "Write product descriptions",
       "description": "Add detailed descriptions for the new t-shirt collection.",
       "priority": "medium",
-      "status": "Done",
-      "order": 0
+      "status": "In Progress",
+      "order": 2
     },
     {
       "id": "3",
       "title": "Optimize images",
       "description": "Compress and resize large images for faster loading.",
       "priority": "low",
-      "status": "In Progress",
-      "order": 5
+      "status": "Done",
+      "order": 3
     },
     {
       "id": "4",
       "title": "Create login API",
       "description": "Implement authentication using JWT and cookies.",
       "priority": "high",
-      "status": "In Progress",
+      "status": "To Do",
       "order": 2
     },
     {
@@ -46,7 +46,7 @@
       "description": "Implement a smooth loading animation using Tailwind.",
       "priority": "low",
       "status": "In Progress",
-      "order": 3
+      "order": 4
     },
     {
       "id": "8",
@@ -54,7 +54,7 @@
       "description": "Add form with validation using react-hook-form and Yup.",
       "priority": "medium",
       "status": "Done",
-      "order": 3
+      "order": 5
     },
     {
       "id": "9",
@@ -70,15 +70,15 @@
       "description": "Host the Next.js app on Vercel and test production build.",
       "priority": "high",
       "status": "In Progress",
-      "order": 4
+      "order": 5
     },
     {
       "id": "2ba0",
       "title": "Test 2222",
       "description": "Test",
       "priority": "moyen",
-      "status": "To Do",
-      "order": 1
+      "status": "In Progress",
+      "order": 0
     },
     {
       "id": "c140",
@@ -86,7 +86,7 @@
       "description": "test bio 2",
       "priority": "high",
       "status": "To Do",
-      "order": 2
+      "order": 1
     },
     {
       "id": "c3bc",
@@ -94,15 +94,15 @@
       "description": "test bio 3",
       "priority": "high",
       "status": "In Progress",
-      "order": 1
+      "order": 3
     },
     {
       "id": "f037",
       "title": "Done 1",
       "description": "bio 1",
       "priority": "high",
-      "status": "In Progress",
-      "order": 0
+      "status": "Done",
+      "order": 4
     },
     {
       "id": "f970",
@@ -118,7 +118,7 @@
       "description": "bio done 2",
       "priority": "high",
       "status": "Done",
-      "order": 4
+      "order": 6
     },
     {
       "id": "e1b6",
@@ -126,7 +126,7 @@
       "description": "Home Page is Finished",
       "priority": "moyen",
       "status": "Done",
-      "order": 6
+      "order": 7
     },
     {
       "id": "dee8",
@@ -138,7 +138,7 @@
     }
   ],
   "user": {
-    "email": "workflowhub1@gmail.com",
+    "email": "site1@gmail.com",
     "password": "123456aa"
   }
 }
