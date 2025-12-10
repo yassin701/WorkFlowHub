@@ -63,9 +63,9 @@ export default function Login() {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
+            navigate(`/Home` , {state : email});
             setEmail("");
             setPassword("");
-            navigate("/Home");
         }, 1500);
     };
 
