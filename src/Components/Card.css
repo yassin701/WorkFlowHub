@@ -23,3 +23,7 @@
 .medium{
     border-left: 4px solid rgb(236, 111, 8);
 }
+
+.DoneCard{
+    text-decoration: 2px line-through ;
+}
