@@ -30,7 +30,7 @@
       "description": "Implement authentication using JWT and cookies.",
       "priority": "high",
       "status": "In Progress",
-      "order": 3
+      "order": 2
     },
     {
       "id": "5",
@@ -38,7 +38,7 @@
       "description": "Resolve toggle animation issue on small screen",
       "priority": "medium",
       "status": "Done",
-      "order": 1
+      "order": 2
     },
     {
       "id": "7",
@@ -54,7 +54,7 @@
       "description": "Add form with validation using react-hook-form and Yup.",
       "priority": "medium",
       "status": "Done",
-      "order": 1
+      "order": 3
     },
     {
       "id": "9",
@@ -62,7 +62,7 @@
       "description": "Display search results as cards with clean UI.",
       "priority": "medium",
       "status": "Done",
-      "order": 0
+      "order": 1
     },
     {
       "id": "10",
@@ -94,7 +94,7 @@
       "description": "test bio 3",
       "priority": "high",
       "status": "In Progress",
-      "order": 2
+      "order": 1
     },
     {
       "id": "f037",
@@ -117,14 +117,16 @@
       "title": "done 2",
       "description": "bio done 2",
       "priority": "high",
-      "status": "Done"
+      "status": "Done",
+      "order": 4
     },
     {
       "id": "e1b6",
       "title": "Finish Home",
       "description": "Home Page is Finished",
       "priority": "moyen",
-      "status": "Done"
+      "status": "Done",
+      "order": 6
     },
     {
       "id": "dee8",
