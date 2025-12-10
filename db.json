@@ -12,17 +12,19 @@
       "id": "2",
       "title": "Write product descriptions",
       "description": "Add detailed descriptions for the new t-shirt collection.",
-      "priority": "medium",
-      "status": "In Progress",
-      "order": 2
+      "priority": "Low",
+      "status": "To Do",
+      "order": 0,
+      "deleted": false
     },
     {
       "id": "3",
       "title": "Optimize images",
       "description": "Compress and resize large images for faster loading.",
       "priority": "low",
-      "status": "Done",
-      "order": 3
+      "status": "In Progress",
+      "order": 1,
+      "deleted": false
     },
     {
       "id": "4",
@@ -30,7 +32,8 @@
       "description": "Implement authentication using JWT and cookies.",
       "priority": "high",
       "status": "To Do",
-      "order": 2
+      "order": 1,
+      "deleted": false
     },
     {
       "id": "5",
@@ -38,15 +41,17 @@
       "description": "Resolve toggle animation issue on small screen",
       "priority": "medium",
       "status": "Done",
-      "order": 2
+      "order": 3,
+      "deleted": false
     },
     {
       "id": "7",
       "title": "Add loading animation",
       "description": "Implement a smooth loading animation using Tailwind.",
       "priority": "low",
-      "status": "In Progress",
-      "order": 4
+      "status": "Done",
+      "order": 0,
+      "deleted": false
     },
     {
       "id": "8",
@@ -54,15 +59,16 @@
       "description": "Add form with validation using react-hook-form and Yup.",
       "priority": "medium",
       "status": "Done",
-      "order": 5
+      "order": 2
     },
     {
       "id": "9",
       "title": "Fix search results",
       "description": "Display search results as cards with clean UI.",
       "priority": "medium",
-      "status": "Done",
-      "order": 1
+      "status": "To Do",
+      "order": 3,
+      "deleted": false
     },
     {
       "id": "10",
@@ -70,15 +76,16 @@
       "description": "Host the Next.js app on Vercel and test production build.",
       "priority": "high",
       "status": "In Progress",
-      "order": 4
+      "order": 0
     },
     {
       "id": "2ba0",
       "title": "Test 2222",
       "description": "Test",
-      "priority": "moyen",
-      "status": "In Progress",
-      "order": 0
+      "priority": "high",
+      "status": "To Do",
+      "order": 1,
+      "deleted": true
     },
     {
       "id": "c140",
@@ -86,55 +93,35 @@
       "description": "test bio 2",
       "priority": "high",
       "status": "To Do",
-      "order": 1
+      "order": 2,
+      "deleted": true
     },
     {
       "id": "c3bc",
       "title": "test 3",
       "description": "test bio 3",
       "priority": "high",
-      "status": "In Progress",
-      "order": 3
+      "status": "Done",
+      "order": 1,
+      "deleted": false
     },
     {
       "id": "f037",
       "title": "Done 1",
       "description": "bio 1",
       "priority": "high",
-      "status": "Done",
-      "order": 4
-    },
-    {
-      "id": "f970",
-      "title": "test 4",
-      "description": "bio 4",
-      "priority": "high",
       "status": "To Do",
-      "order": 3
+      "order": 1,
+      "deleted": false
     },
     {
       "id": "f9e6",
       "title": "done 2",
       "description": "bio done 2",
       "priority": "high",
-      "status": "Done",
-      "order": 6
-    },
-    {
-      "id": "e1b6",
-      "title": "Finish Home",
-      "description": "Home Page is Finished",
-      "priority": "moyen",
-      "status": "Done",
-      "order": 7
-    },
-    {
-      "id": "dee8",
-      "title": "To Do",
-      "description": "To Do",
-      "priority": "high",
       "status": "To Do",
-      "order": 4
+      "order": 2,
+      "deleted": true
     }
   ],
   "user": {
