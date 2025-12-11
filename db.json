@@ -4,18 +4,17 @@
       "id": "1",
       "title": "Fix homepage UI Fix homepage UI Fix homepage UI",
       "description": "Improve the hero section and adjust the responsive layout.",
-      "priority": "medium",
-      "status": "To Do",
+      "priority": "moyen",
+      "status": "Done",
       "order": 0
     },
     {
       "id": "2",
       "title": "Write product descriptions",
       "description": "Add detailed descriptions for the new t-shirt collection.",
-      "priority": "Low",
-      "status": "To Do",
-      "order": 0,
-      "deleted": false
+      "priority": "medium",
+      "status": "In Progress",
+      "order": 0
     },
     {
       "id": "3",
@@ -23,17 +22,15 @@
       "description": "Compress and resize large images for faster loading.",
       "priority": "low",
       "status": "In Progress",
-      "order": 1,
-      "deleted": false
+      "order": 3
     },
     {
       "id": "4",
       "title": "Create login API",
       "description": "Implement authentication using JWT and cookies.",
       "priority": "high",
-      "status": "In Progress",
-      "order": 2,
-      "deleted": false
+      "status": "To Do",
+      "order": 1
     },
     {
       "id": "5",
@@ -41,17 +38,15 @@
       "description": "Resolve toggle animation issue on small screen",
       "priority": "medium",
       "status": "Done",
-      "order": 3,
-      "deleted": false
+      "order": 1
     },
     {
       "id": "7",
       "title": "Add loading animation",
       "description": "Implement a smooth loading animation using Tailwind.",
       "priority": "low",
-      "status": "Done",
-      "order": 0,
-      "deleted": false
+      "status": "In Progress",
+      "order": 1
     },
     {
       "id": "8",
@@ -59,7 +54,7 @@
       "description": "Add form with validation using react-hook-form and Yup.",
       "priority": "medium",
       "status": "Done",
-      "order": 2
+      "order": 4
     },
     {
       "id": "9",
@@ -67,8 +62,7 @@
       "description": "Display search results as cards with clean UI.",
       "priority": "medium",
       "status": "To Do",
-      "order": 3,
-      "deleted": false
+      "order": 3
     },
     {
       "id": "10",
@@ -76,16 +70,15 @@
       "description": "Host the Next.js app on Vercel and test production build.",
       "priority": "high",
       "status": "In Progress",
-      "order": 0
+      "order": 2
     },
     {
       "id": "2ba0",
       "title": "Test 2222",
       "description": "Test",
-      "priority": "high",
+      "priority": "moyen",
       "status": "To Do",
-      "order": 1,
-      "deleted": true
+      "order": 2
     },
     {
       "id": "c140",
@@ -93,39 +86,57 @@
       "description": "test bio 2",
       "priority": "high",
       "status": "To Do",
-      "order": 2,
-      "deleted": true
+      "order": 0
     },
     {
       "id": "c3bc",
       "title": "test 3",
       "description": "test bio 3",
       "priority": "high",
-      "status": "Done",
-      "order": 1,
-      "deleted": false
+      "status": "To Do",
+      "order": 6
     },
     {
       "id": "f037",
       "title": "Done 1",
       "description": "bio 1",
       "priority": "high",
+      "status": "Done",
+      "order": 3
+    },
+    {
+      "id": "f970",
+      "title": "test 4",
+      "description": "bio 4",
+      "priority": "high",
       "status": "To Do",
-      "order": 1,
-      "deleted": false
+      "order": 5
     },
     {
       "id": "f9e6",
       "title": "done 2",
       "description": "bio done 2",
       "priority": "high",
+      "status": "Done",
+      "order": 5
+    },
+    {
+      "id": "e1b6",
+      "title": "Finish Home",
+      "description": "Home Page is Finished",
+      "priority": "moyen",
+      "status": "Done",
+      "order": 6
+    },
+    {
+      "id": "dee8",
+      "title": "To Do",
+      "description": "To Do",
+      "priority": "high",
       "status": "To Do",
       "order": 2,
       "deleted": true
     }
-  ],
-  "user": {
-    "email": "site1@gmail.com",
-    "password": "123456aa"
-  }
+  ]
+
 }

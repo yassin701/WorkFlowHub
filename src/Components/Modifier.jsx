@@ -1,12 +1,13 @@
 import React from 'react'
 import { useState } from "react";
 import axios from "axios";
+import Delete from './Delete';
 import "./Ajouter.css"; 
 import "./Modifier.css"
 export default function Modifier({ onClose, task }) {
 
   const [updatedTask, setUpdatedTask] = useState({ ...task });
-
+  const [isDeleted, setIsDeleted] = useState(false);
   const handleChange = (e) => {
     setUpdatedTask({
       ...updatedTask,
@@ -75,12 +76,10 @@ export default function Modifier({ onClose, task }) {
           <button className="btn-update" onClick={handleUpdate}>
             Update
           </button>
-
-          <button className="btn-delete">
-            Delete
-          </button>
+             
+          <Delete task={task} onDeleted={() => setIsDeleted(true)} />
         </div>
-
+     
       </div>
     </>
   );

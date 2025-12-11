@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+
 
 export default function Login() {
+    const [name, setName]=useState("")
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [emailerror, setEmailerror] = useState("");
+    const [nameerror, setNameerror] = useState("")
     const [passworderror, setPassworderror] = useState("");
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
@@ -25,8 +27,15 @@ export default function Login() {
         // Clear errors
         setEmailerror("");
         setPassworderror("");
+        setNameerror("");
+
 
         let valid = true;
+
+        if(!name.trim()){
+          setNameerror("Name is required");
+          valid = false;
+        }
 
         // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -46,26 +55,14 @@ export default function Login() {
 
         if (!valid) return;
 
-        // Fetch user from JSON server
-        const { data } = await axios.get("http://localhost:3000/user");
-
-        if (email !== data.email) {
-            setEmailerror("Email incorrect");
-            return;
-        }
-
-        if (password !== data.password) {
-            setPassworderror("Password incorrect");
-            return;
-        }
-
         // Login success
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-            navigate(`/Home` , {state : email});
+            navigate("/Home",{state : name});
             setEmail("");
             setPassword("");
+            setName("");
         }, 1500);
     };
 
@@ -75,6 +72,17 @@ export default function Login() {
                 <h1 className='login-title'>Sign In</h1>
 
                 <form>
+                    <div className='Name'>
+                        <label>Name</label>
+                        <input
+                            type="text"
+                            placeholder='Name'
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                        />
+                    </div>
+                    {nameerror && <p className="error">{nameerror}</p>}
+
                     <div className='Email'>
                         <label>Email</label>
                         <input
