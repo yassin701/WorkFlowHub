@@ -120,3 +120,13 @@
   background: var(--light-gray);
   color: var(--text-dark);
 }
+
+.btn-delete {
+  background-color: #e63946;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
