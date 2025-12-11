@@ -1,16 +1,21 @@
-import { useState } from 'react';
-import './Card.css';
-import Modifier from './Modifier';
-import { Draggable } from '@hello-pangea/dnd';
+import { useState } from "react";
+import "./Card.css";
+import Modifier from "./Modifier";
+import { Draggable } from "@hello-pangea/dnd";
 
 
 
-export default function Card({ task, index }) {
+
+
+export default function Card({ task, index, onEdit }) {
   const [showEditPopUp, setShowEditPopUp] = useState(false);
 
+
+
   const handleClick = () => {
-    setShowEditPopUp(true);
+   if(onEdit) onEdit(task);
   };
+
 
   return (
     <Draggable draggableId={task.id.toString()} index={index}>
@@ -23,18 +28,23 @@ export default function Card({ task, index }) {
           {showEditPopUp ? (
             <Modifier />
           ) : (
-            <>
-              <p 
-                  className={`Card ${
-                      task.priority === 'high'
-                        ? 'high'
-                        : task.priority === 'low'
-                        ? 'low'
-                        : 'medium'
-                      }
-                      ${task.status==='Done'?'DoneCard':''}`
-                  }
-                              onClick={handleClick}>
+            //---------------------------------------------------
+            // 4. Add Delete component and wrap Card in a div
+            <div className="card-with-delete">
+              <p
+                className={`Card ${
+                  task.priority === "high"
+                    ? "high"
+                    : task.priority === "low"
+                    ? "low"
+                    : "medium"
+                }
+                ${task.status==='Done'?'DoneCard':''}
+                `
+                
+              }
+                onClick={handleClick}
+              >
                 {task.title}
                 <span  
                     className={`${
@@ -50,11 +60,11 @@ export default function Card({ task, index }) {
 
                 
               </p>
-            </>
+            </div>
+            //---------------------------------------------------
           )}
         </div>
       )}
     </Draggable>
   );
 }
-
