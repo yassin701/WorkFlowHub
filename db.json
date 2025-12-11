@@ -5,8 +5,8 @@
       "title": "Fix homepage UI Fix homepage UI Fix homepage UI",
       "description": "Improve the hero section and adjust the responsive layout.",
       "priority": "moyen",
-      "status": "Done",
-      "order": 0
+      "status": "In Progress",
+      "order": 1
     },
     {
       "id": "2",
@@ -22,7 +22,7 @@
       "description": "Compress and resize large images for faster loading.",
       "priority": "low",
       "status": "In Progress",
-      "order": 3
+      "order": 8
     },
     {
       "id": "4",
@@ -38,31 +38,31 @@
       "description": "Resolve toggle animation issue on small screen",
       "priority": "medium",
       "status": "Done",
-      "order": 1
+      "order": 0
     },
     {
       "id": "7",
       "title": "Add loading animation",
       "description": "Implement a smooth loading animation using Tailwind.",
       "priority": "low",
-      "status": "In Progress",
-      "order": 1
+      "status": "Done",
+      "order": 3
     },
     {
       "id": "8",
       "title": "Create contact form",
       "description": "Add form with validation using react-hook-form and Yup.",
       "priority": "medium",
-      "status": "Done",
-      "order": 4
+      "status": "In Progress",
+      "order": 5
     },
     {
       "id": "9",
       "title": "Fix search results",
       "description": "Display search results as cards with clean UI.",
       "priority": "medium",
-      "status": "To Do",
-      "order": 3
+      "status": "In Progress",
+      "order": 7
     },
     {
       "id": "10",
@@ -70,14 +70,14 @@
       "description": "Host the Next.js app on Vercel and test production build.",
       "priority": "high",
       "status": "In Progress",
-      "order": 2
+      "order": 6
     },
     {
       "id": "2ba0",
       "title": "Test 2222",
       "description": "Test",
-      "priority": "moyen",
-      "status": "To Do",
+      "priority": "Urgent",
+      "status": "In Progress",
       "order": 2
     },
     {
@@ -102,13 +102,13 @@
       "description": "bio 1",
       "priority": "high",
       "status": "Done",
-      "order": 3
+      "order": 1
     },
     {
       "id": "f970",
       "title": "test 4",
       "description": "bio 4",
-      "priority": "high",
+      "priority": "Urgent",
       "status": "To Do",
       "order": 5
     },
@@ -118,7 +118,7 @@
       "description": "bio done 2",
       "priority": "high",
       "status": "Done",
-      "order": 5
+      "order": 4
     },
     {
       "id": "e1b6",
@@ -126,7 +126,7 @@
       "description": "Home Page is Finished",
       "priority": "moyen",
       "status": "Done",
-      "order": 6
+      "order": 2
     },
     {
       "id": "dee8",
@@ -135,8 +135,7 @@
       "priority": "high",
       "status": "To Do",
       "order": 2,
-      "deleted": true
+      "deleted": false
     }
   ]
-
 }
