@@ -57,7 +57,7 @@ export default function Modifier({ onClose, task }) {
         >
           <option value="high">High</option>
           <option value="medium">Medium</option>
-          <option value="Low">Low</option>
+          <option value="low">Low</option>
         </select>
 
         <label className="ajouter-label">Status</label>

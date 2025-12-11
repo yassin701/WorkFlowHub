@@ -18,7 +18,7 @@
 .logo {
     color: white;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     margin-left: 90px;
 }
 
@@ -45,8 +45,8 @@
 .to-corb {
     color: white;
     text-decoration: none;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .home-link:hover,
@@ -58,10 +58,6 @@
 .trash-link:hover .to-corb {
     color: black;
 }
-
-/* .avatar {
- margin-top: 10px;
-} */
 
 .avatar{
   position: fixed;
