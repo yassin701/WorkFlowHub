@@ -121,7 +121,7 @@ form {
   box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
 }
 
-.Email, .Password {
+.Email, .Password,.Name {
   margin-bottom: 15px;
 }
 
@@ -223,3 +223,74 @@ input:focus {
     }
 }
 
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  animation: fadeIn 0.2s ease;
+}
+
+.popup-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.confirm-btn {
+  background-color: #e53935;
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.confirm-btn:hover {
+  background-color: #c62828;
+}
+
+.cancel-btn {
+  background-color: #bdbdbd;
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cancel-btn:hover {
+  background-color: #9e9e9e;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+.bnj{
+  position: absolute;
+  top: 21px;
+  color: #e6fff0;
+  z-index: 999;
+  margin-left:15%;
+}
