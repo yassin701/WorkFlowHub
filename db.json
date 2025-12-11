@@ -2,11 +2,11 @@
   "tasks": [
     {
       "id": "1",
-      "title": "Fix homepage UI",
+      "title": "Fix homepage UI Fix homepage UI Fix homepage UI",
       "description": "Improve the hero section and adjust the responsive layout.",
-      "priority": "moyen",
-      "status": "In Progress",
-      "order": 1
+      "priority": "medium",
+      "status": "To Do",
+      "order": 0
     },
     {
       "id": "2",
@@ -31,8 +31,8 @@
       "title": "Create login API",
       "description": "Implement authentication using JWT and cookies.",
       "priority": "high",
-      "status": "To Do",
-      "order": 1,
+      "status": "In Progress",
+      "order": 2,
       "deleted": false
     },
     {

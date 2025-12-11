@@ -3,26 +3,19 @@ import "./Card.css";
 import Modifier from "./Modifier";
 import { Draggable } from "@hello-pangea/dnd";
 
-//------------------------
-// 2. Impot Delete
-import Delete from "./Delete";
-//------------------------
+
 
 
 
 export default function Card({ task, index, onEdit }) {
   const [showEditPopUp, setShowEditPopUp] = useState(false);
 
-//------------------------
-  // 3. Add isDeleted state
-  const [isDeleted, setIsDeleted] = useState(false);
-//------------------------
+
 
   const handleClick = () => {
    if(onEdit) onEdit(task);
   };
 
-    if (isDeleted) return null;
 
   return (
     <Draggable draggableId={task.id.toString()} index={index}>
@@ -45,12 +38,28 @@ export default function Card({ task, index, onEdit }) {
                     : task.priority === "low"
                     ? "low"
                     : "medium"
-                }`}
+                }
+                ${task.status==='Done'?'DoneCard':''}
+                `
+                
+              }
                 onClick={handleClick}
               >
                 {task.title}
+                <span  
+                    className={`${
+                      task.priority === 'high'
+                        ? 'highPriority'
+                        : task.priority === 'low'
+                        ? 'lowPriority'
+                        : 'mediumPriority'
+                      }`
+                    }>
+                  {task.priority}
+                </span>
+
+                
               </p>
-              <Delete task={task} onDeleted={() => setIsDeleted(true)} />
             </div>
             //---------------------------------------------------
           )}

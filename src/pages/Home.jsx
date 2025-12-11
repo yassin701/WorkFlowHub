@@ -43,15 +43,12 @@ export default function Home() {
 
       <div className='All-btn'>
         <Avatar
-
           name={email}
           round={true}
           size="35"
-
           color="#ffffffff"
           textSizeRatio={2}
           fgColor="#000000ff"
-
           className='avatar'
 
         />

@@ -22,9 +22,9 @@ export default function Delete({ task, onDeleted }) {
 
   return (
     <>
-      <button className="delete-btn" onClick={() => setOpen(true)}>
+      {/* <button className="delete-btn" onClick={() => setOpen(true)}>
         🗑️
-      </button>
+      </button> */}
 
       {open && (
         <div className="delete-popup">

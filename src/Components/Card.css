@@ -1,12 +1,13 @@
 
 .Card{
     background-color: #dcdcdc; 
-    padding: 20px 20px;
+    padding: 20px 18px;
+    padding-right: 50px;
     border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
     line-height: normal;
-    
+    position: relative;
 }
 .Card:hover{
     background-color: #dcdcdcd9;
@@ -26,4 +27,26 @@
 
 .DoneCard{
     text-decoration: 2px line-through ;
+}
+.Card span{
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.highPriority,
+.mediumPriority,
+.lowPriority{
+    color: red;
+    padding: 5px 10px;
+    border-radius: 14px;
+}
+.mediumPriority{
+    color: rgb(236, 111, 8);
+
+}
+.lowPriority{
+    color: green;
+
 }
