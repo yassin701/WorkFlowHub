@@ -2,7 +2,7 @@
   "tasks": [
     {
       "id": "1",
-      "title": "Fix homepage UI",
+      "title": "Fix homepage UI Fix homepage UI Fix homepage UI",
       "description": "Improve the hero section and adjust the responsive layout.",
       "priority": "moyen",
       "status": "Done",
@@ -134,7 +134,8 @@
       "description": "To Do",
       "priority": "high",
       "status": "To Do",
-      "order": 4
+      "order": 2,
+      "deleted": true
     }
   ]
 
