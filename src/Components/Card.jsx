@@ -36,6 +36,17 @@ export default function Card({ task, index }) {
                   }
                               onClick={handleClick}>
                 {task.title}
+                <span  
+                    className={`${
+                      task.priority === 'high'
+                        ? 'highPriority'
+                        : task.priority === 'low'
+                        ? 'lowPriority'
+                        : 'mediumPriority'
+                      }`
+                    }>
+                  {task.priority}
+                </span>
 
                 
               </p>
