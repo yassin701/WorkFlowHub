@@ -76,8 +76,9 @@ export default function Modifier({ onClose, task }) {
           <button className="btn-update" onClick={handleUpdate}>
             Update
           </button>
-             
-          <Delete task={task} onDeleted={() => setIsDeleted(true)} />
+          {/* Pass isDeleted state to Delete component and forward onClose so Modifier modal closes on delete */}
+          <Delete task={task} onDeleted={() => setIsDeleted(true)} onClose={onClose} />
+
         </div>
      
       </div>
