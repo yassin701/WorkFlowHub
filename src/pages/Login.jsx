@@ -59,7 +59,8 @@ export default function Login() {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-            navigate("/Home",{state : name});
+            navigate('/home')
+            localStorage.setItem('name',name)
             setEmail("");
             setPassword("");
             setName("");

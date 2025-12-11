@@ -1,8 +1,11 @@
 import React from "react"
 import './Navbar.css'
 import { Link } from "react-router-dom"
+import Avatar from 'react-avatar';
 
 export default function Navbar() {
+
+  const name = localStorage.getItem('name');
 
   return (
     <div className="navbar">
@@ -16,7 +19,20 @@ export default function Navbar() {
        
       </div>
        
+      <Avatar
       
+                name={name}
+                round={true}
+                size="35"
+                color="#ffffffff"
+                textSizeRatio={2}
+                fgColor="#000000ff"
+                className='avatar'
+                
+      />
+              <div className='bnj'>
+                Welcome {name} to your workspace 
+             </div>
     </div>
   )
 }

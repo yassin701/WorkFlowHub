@@ -22,18 +22,17 @@ export default function Delete({ task, onDeleted }) {
 
   return (
     <>
-      {/* <button className="delete-btn" onClick={() => setOpen(true)}>
-        🗑️
-      </button> */}
-
+      <button className="btn-delete" onClick={() => setOpen(true)}>
+        Delete
+      </button>
       {open && (
         <div className="delete-popup">
           <div className="delete-box">
 
-          <div className="warning-header">
-            <FaExclamationTriangle className="warning-icon" />
-            <h2 className="modal-title">Confirmer la suppression</h2>
-          </div>
+            <div className="warning-header">
+              <FaExclamationTriangle className="warning-icon" />
+              <h2 className="modal-title">Confirmer la suppression</h2>
+            </div>
 
             <p>Are you sure you want to delete this task?</p>
             <div className="delete-actions">

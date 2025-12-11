@@ -1,7 +1,6 @@
 /* Container principal */
 .ajouter-container {
   width: 420px;
-  
   padding: 26px;
   background: #ffffff;
   border-radius: 14px;
@@ -12,11 +11,12 @@
   font-family: Arial, Helvetica, sans-serif;
   transform: scale(0.9);
   position: fixed;
-  top: 20px;
-  bottom: 80px;
-  left: 380px;
+  top: 100px;
+
+  right: 40%;
   z-index: 999;
-  height: 90vh;   
+  height: 50vh;   
+  margin: 0 auto;
 }
 
 .overlay{

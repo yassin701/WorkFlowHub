@@ -6,9 +6,8 @@ import { CiLogout } from "react-icons/ci";
 import Ajouter from '../Components/Ajouter';
 import AllColone from '../Components/AllColone'
 import Modifier from '../Components/Modifier';
-import Avatar from 'react-avatar';
 import { toast } from 'sonner';
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 
 
 
@@ -17,11 +16,11 @@ import { useLocation } from 'react-router-dom';
 export default function Home() {
   const [showpopup, setShowpopup] = useState(false)
   const [reload, setReload] = useState(false)
-  const [ShowDeletePopup, setShowDeletePopup]= useState(false)
+  const [ShowLogoutPopup, setShowLogoutPopup]= useState(false)
   const [taskToEdit, setTaskToEdit] = useState(null)
   const Navigate = useNavigate();
-  const location = useLocation();
-  const name = location.state;
+  // const location = useLocation();
+  // const name = location.state;
 
 
   const handleShow = () => {
@@ -42,36 +41,24 @@ export default function Home() {
   return (
     <>
 
-
+   
+    <div className='home-page'>
 
       <div className='All-btn'>
-        <Avatar
-
-          name={name}
-          round={true}
-          size="35"
-          color="#ffffffff"
-          textSizeRatio={2}
-          fgColor="#000000ff"
-          className='avatar'
-
-        />
-        <div className='bnj'>
-          Welcome {name} to your workspace 
-       </div>
+        
         <button onClick={handleShow} className='btn-1'>
           <FaPlus className="icon" />
           Add Task
         </button>
 
-        <button onClick={() =>setShowDeletePopup(true)} className='logout-btn'>
+        <button onClick={() =>setShowLogoutPopup(true)} className='logout-btn'>
           <CiLogout className="logout-icon" />
           Log out
         </button>
       </div>
 
 
-      {ShowDeletePopup && (
+      {ShowLogoutPopup && (
   <div className="popup-overlay">
     <div className="popup-box">
       <h3>Are you sure you want to log out?</h3>
@@ -82,8 +69,9 @@ export default function Home() {
           onClick={() => {
        
             toast.success("User logged out");
-            setShowDeletePopup(false);
+            setShowLogoutPopup(false);
              (Navigate('/'))
+             localStorage.clear('name')
           }}
         >
           Confirm
@@ -91,7 +79,7 @@ export default function Home() {
 
         <button
           className="cancel-btn"
-          onClick={() => setShowDeletePopup(false)}
+          onClick={() => setShowLogoutPopup(false)}
         >
           Cancel
         </button>
@@ -112,6 +100,7 @@ export default function Home() {
       <div>
         <AllColone reload={reload} onEdit={(task) => setTaskToEdit(task)} />
 
+      </div>
       </div>
     </>
   );

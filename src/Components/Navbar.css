@@ -4,25 +4,21 @@
     left: 0;
     width: 100%;
     height: 60px;
-
     background: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(8px);
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    padding: 0 25px;
+    padding: 0 20px;
     z-index: 999;
-
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 /* LOGO AT LEFT */
 .logo {
     color: white;
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 500;
     margin-left: 90px;
 }
 
@@ -49,8 +45,8 @@
 .to-corb {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .home-link:hover,
@@ -63,6 +59,23 @@
     color: black;
 }
 
-.avatar {
+/* .avatar {
  margin-top: 10px;
+} */
+
+.avatar{
+  position: fixed;
+  top: 11px;
+  right: 60px;
+  z-index: 999;
+  
+}
+
+.bnj{
+  position: absolute;
+  top: 21px;
+  right: 130px;
+  color: #e6fff0;
+  z-index: 999;
+  margin-left:10%;
 }

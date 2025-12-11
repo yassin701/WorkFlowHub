@@ -1,6 +1,6 @@
 
 .Card{
-    background-color: #dcdcdc; 
+    background-color: rgb(255, 255, 255); 
     padding: 20px 18px;
     padding-right: 50px;
     border-radius: 10px;
@@ -39,11 +39,12 @@
 .mediumPriority,
 .lowPriority{
     color: red;
+    background-color:beige;
     padding: 5px 10px;
     border-radius: 14px;
 }
 .mediumPriority{
-    color: rgb(236, 111, 8);
+    color: rgb(255, 115, 0);
 
 }
 .lowPriority{

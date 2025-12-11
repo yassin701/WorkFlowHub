@@ -55,8 +55,8 @@ export default function Modifier({ onClose, task }) {
           onChange={handleChange}
           className="ajouter-select"
         >
-          <option value="Urgent">High</option>
-          <option value="moyen">Medium</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
           <option value="Low">Low</option>
         </select>
 

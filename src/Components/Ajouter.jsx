@@ -98,8 +98,8 @@ export default function Ajouter({ onClose }) {
       {error && <p>{DesErr}</p>}
       <label className="ajouter-label">Priority</label>
       <select onChange={HandleChange} name='priority' className="ajouter-select" value={task.priority}>
-        <option value="Urgent">High</option>
-        <option value="moyen">Medium</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
         <option value="Low">Low</option>
       </select>
 
