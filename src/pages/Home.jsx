@@ -17,7 +17,7 @@ import { useLocation } from 'react-router-dom';
 export default function Home() {
   const [showpopup, setShowpopup] = useState(false)
   const [reload, setReload] = useState(false)
-  const [ShowDeletePopup, setShowDeletePopup]= useState(false)
+  const [ShowLogoutPopup, setShowLogoutPopup]= useState(false)
   const [taskToEdit, setTaskToEdit] = useState(null)
   const Navigate = useNavigate();
   const location = useLocation();
@@ -64,14 +64,14 @@ export default function Home() {
           Add Task
         </button>
 
-        <button onClick={() =>setShowDeletePopup(true)} className='logout-btn'>
+        <button onClick={() =>setShowLogoutPopup(true)} className='logout-btn'>
           <CiLogout className="logout-icon" />
           Log out
         </button>
       </div>
 
 
-      {ShowDeletePopup && (
+      {ShowLogoutPopup && (
   <div className="popup-overlay">
     <div className="popup-box">
       <h3>Are you sure you want to log out?</h3>
@@ -82,7 +82,7 @@ export default function Home() {
           onClick={() => {
        
             toast.success("User logged out");
-            setShowDeletePopup(false);
+            setShowLogoutPopup(false);
              (Navigate('/'))
           }}
         >
@@ -91,7 +91,7 @@ export default function Home() {
 
         <button
           className="cancel-btn"
-          onClick={() => setShowDeletePopup(false)}
+          onClick={() => setShowLogoutPopup(false)}
         >
           Cancel
         </button>
