@@ -18,7 +18,7 @@ background: url('src/images/img1.jpg') no-repeat center center/cover;
 
     min-height: 100vh;
     margin: 0;
-    padding: 0;
+    padding-top: 10px;
     zoom: 1.4;
 }
 
@@ -28,6 +28,7 @@ background: url('src/images/img1.jpg') no-repeat center center/cover;
   padding: 20px;
   max-width: 900px;
   margin:auto;
+ 
 }
 
 .basket-header{
@@ -89,6 +90,7 @@ h1 {
  display: grid;
  gap: 15px;
  grid-template-columns: repeat(3, 1fr);
+ margin-top: 10px;
 }
 
 /* Each card */
@@ -210,6 +212,25 @@ h1 {
 }
 
 
-.basket-title{
-  color: rgb(0, 0, 0);
+.centered-task {
+   
+      
+         
+   text-align: center;             
+  color: #000000;            
+  font-weight: bold;         
+  font-size: 24px;
+            
+}
+
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.2s ease;
 }
