@@ -4,7 +4,7 @@
       "id": "1",
       "title": "Fix homepage UI",
       "description": "Improve the hero section and adjust the responsive layout.",
-      "priority": "medium",
+      "priority": "low",
       "status": "In Progress",
       "order": 6
     },
@@ -14,7 +14,7 @@
       "description": "Add detailed descriptions for the new t-shirt collection.",
       "priority": "high",
       "status": "In Progress",
-      "order": 3
+      "order": 2
     },
     {
       "id": "3",
@@ -30,13 +30,14 @@
       "description": "Implement authentication using JWT and cookies.",
       "priority": "high",
       "status": "In Progress",
-      "order": 1
+      "order": 1,
+      "deleted": true
     },
     {
       "id": "5",
       "title": "Fix mobile navbar v1",
       "description": "Resolve toggle animation issue on small screen",
-      "priority": "medium",
+      "priority": "high",
       "status": "Done",
       "order": 3
     },
@@ -53,14 +54,14 @@
       "title": "Create contact form",
       "description": "Add form with validation using react-hook-form and Yup.",
       "priority": "high",
-      "status": "Done",
-      "order": 5
+      "status": "In Progress",
+      "order": 3
     },
     {
       "id": "9",
       "title": "Fix search results",
       "description": "Display search results as cards with clean UI.",
-      "priority": "medium",
+      "priority": "high",
       "status": "In Progress",
       "order": 5
     },
@@ -70,7 +71,7 @@
       "description": "Host the Next.js app on Vercel and test production build.",
       "priority": "high",
       "status": "To Do",
-      "order": 3
+      "order": 1
     },
     {
       "id": "c3bc",
@@ -96,7 +97,7 @@
       "description": "bio 4",
       "priority": "medium",
       "status": "To Do",
-      "order": 1
+      "order": 2
     },
     {
       "id": "f9e6",
@@ -130,7 +131,8 @@
       "description": "abssi",
       "priority": "high",
       "status": "In Progress",
-      "order": 4
+      "order": 4,
+      "deleted": true
     },
     {
       "id": "9223",
@@ -138,21 +140,24 @@
       "description": "hello",
       "priority": "low",
       "status": "To Do",
-      "deleted": true
+      "deleted": true,
+      "order": 4
     },
     {
       "id": "2851",
       "title": "hello",
       "description": "hello ",
       "priority": "low",
-      "status": "Done"
+      "status": "To Do",
+      "order": 3
     },
     {
       "id": "bc0d",
       "title": "yyyjj",
       "description": "jiji",
       "priority": "low",
-      "status": "To Do"
+      "status": "To Do",
+      "order": 5
     }
   ]
 }
