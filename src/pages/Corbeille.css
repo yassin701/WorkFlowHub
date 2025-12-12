@@ -4,10 +4,22 @@ body {
 }
 
 .corbeille-body {
-   background: linear-gradient(135deg, #F093FB, #F5576C);
+background: url('src/images/img1.jpg') no-repeat center center/cover;
+
+
+
+
+
+
+
+
+
+
+
     min-height: 100vh;
     margin: 0;
-    padding: 0;
+    padding-top: 10px;
+    zoom: 1.4;
 }
 
 
@@ -15,7 +27,8 @@ body {
 .basket-container {
   padding: 20px;
   max-width: 900px;
-  margin: 50px auto;
+  margin:auto;
+ 
 }
 
 .basket-header{
@@ -30,9 +43,9 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
-  color: #fff; /* text color */
+  color: #000000; /* text color */
   background-color: transparent; /* transparent background */
-  border: 2px solid #fff; /* white border */
+  border: 2px solid #000000; /* white border */
   border-radius: 0.375rem; /* rounded corners like Bootstrap */
   text-align: center;
   vertical-align: middle;
@@ -42,8 +55,8 @@ body {
 }
 
 .back-btn:hover {
-  color: #000; /* or keep white if you prefer */
-  background-color: #fff; /* fills white on hover */
+  color: #ffffff; /* or keep white if you prefer */
+  background-color: #000000; /* fills white on hover */
   border-color: #fff;
 }
 
@@ -56,6 +69,7 @@ body {
     width: 80px;
     height: 40PX;
     justify-content: center;
+    color: rgb(0, 0, 0);
 }
 
 h1 {
@@ -76,6 +90,7 @@ h1 {
  display: grid;
  gap: 15px;
  grid-template-columns: repeat(3, 1fr);
+ margin-top: 10px;
 }
 
 /* Each card */
@@ -194,4 +209,28 @@ h1 {
 .confirm-btn {
   background: #e74c3c;
   color: white;
+}
+
+
+.centered-task {
+   
+      
+         
+   text-align: center;             
+  color: #000000;            
+  font-weight: bold;         
+  font-size: 24px;
+            
+}
+
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.2s ease;
 }

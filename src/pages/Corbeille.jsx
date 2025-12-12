@@ -14,6 +14,11 @@ export default function Corbeille() {
   const [deletedTasks, setDeletedTasks] = useState([]);
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [taskToDelete, setTaskToDelete] = useState(null);
+  const [searchTask,setSearchTask] = useState("")
+  const SearchForTask = (event) =>{
+     setSearchTask(event.target.value)
+
+  }
   const navigate = useNavigate();
 
   // Load deleted tasks
@@ -70,7 +75,9 @@ export default function Corbeille() {
     <div className="corbeille-body">
 
 
-    
+     <div class="centered-task">
+       Task
+     </div>
     <div className="basket-container">
       {/* Header: Return button left + Title center (optional) + Counter right */}
       <div className="basket-header">
@@ -78,10 +85,10 @@ export default function Corbeille() {
           <FaArrowLeft className="arrow" /> Back
         </button>
 
-        <div className="basket-title">
-          <h1>Basket</h1>
+        
+          <input type="text" placeholder="Search for a task" onChange={SearchForTask} className="search-input" />
           
-        </div>
+      
 
         <div className="basket-counter">
              <span className="counter-badge" >{deletedTasks.length}</span>
@@ -94,7 +101,17 @@ export default function Corbeille() {
         <p className="empty-text">No deleted tasks.</p>
       ) : (
         <div className="basket-list">
-          {deletedTasks.map((task) => (
+          {deletedTasks.filter((index)=>{
+             if(searchTask === "")
+              return true;
+              return index.title.toLowerCase().includes(searchTask.toLowerCase())
+             
+          })
+          
+          
+          
+          
+          .map((task) => (
             <div className="basket-card" key={task.id}>
               <div className="card-top">
                 <h3>{task.title}</h3>
