@@ -3,7 +3,7 @@ import { FaExclamationTriangle, FaTimes } from 'react-icons/fa'
 import axios from "axios";
 import "./Delete.css";
 
-export default function Delete({ task, onDeleted }) {
+export default function Delete({ task, onDeleted, onClose  }) {
   const [open, setOpen] = useState(false);
 
   const handleConfirm = async () => {
@@ -14,7 +14,10 @@ export default function Delete({ task, onDeleted }) {
       });
 
       onDeleted(task.id); // parent (Card) updates UI
+      // close this popup
       setOpen(false);
+      // if parent passed an onClose (e.g. Modifier modal), call it so parent modal closes too
+      if (typeof onClose === "function") onClose();
     } catch (err) {
       console.error(err);
     }

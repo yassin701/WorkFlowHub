@@ -8,10 +8,11 @@ body{
 }
 
 .home-page {
-  background: url('src/images/img1.jpg') no-repeat center center/cover;
   height: 97vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
+    url('src/images/img1.jpg') center/cover no-repeat;
 }
-
 
 
 
@@ -23,15 +24,16 @@ body{
   margin-left: 55%;
 }
 .logout-btn {
+  position: fixed;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 500;
   font-style: normal;
-  padding: 10px;
+  padding: 16px 40px;
   border: 0;
   display: flex;
   gap: 5px;
   background-color:rgb(210, 50, 18);
-  margin-top: 20px;
+  margin-top: 60px;
   border-radius: 10px;
   color: white;
   cursor: pointer;
@@ -57,10 +59,10 @@ body{
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 500;
   font-style: normal;
-  padding: 10px;
+  padding: 16px 40px;
   border: 0;
   background-color:rgb(127, 159, 79);
-  margin-top: 20px;
+  margin-top: 60px;
   border-radius: 10px;
   color: white;
   cursor: pointer;

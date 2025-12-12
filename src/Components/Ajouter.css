@@ -12,10 +12,9 @@
   transform: scale(0.9);
   position: fixed;
   top: 100px;
-
-  right: 40%;
+  right: 35%;
   z-index: 999;
-  height: 50vh;   
+  height: 70vh;   
   margin: 0 auto;
 }
 

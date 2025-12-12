@@ -57,7 +57,7 @@ export default function Modifier({ onClose, task }) {
         >
           <option value="high">High</option>
           <option value="medium">Medium</option>
-          <option value="Low">Low</option>
+          <option value="low">Low</option>
         </select>
 
         <label className="ajouter-label">Status</label>
@@ -76,8 +76,9 @@ export default function Modifier({ onClose, task }) {
           <button className="btn-update" onClick={handleUpdate}>
             Update
           </button>
-             
-          <Delete task={task} onDeleted={() => setIsDeleted(true)} />
+          {/* Pass isDeleted state to Delete component and forward onClose so Modifier modal closes on delete */}
+          <Delete task={task} onDeleted={() => setIsDeleted(true)} onClose={onClose} />
+
         </div>
      
       </div>

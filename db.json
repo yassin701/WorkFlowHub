@@ -6,7 +6,7 @@
       "description": "Improve the hero section and adjust the responsive layout.",
       "priority": "medium",
       "status": "In Progress",
-      "order": 3
+      "order": 6
     },
     {
       "id": "2",
@@ -14,7 +14,7 @@
       "description": "Add detailed descriptions for the new t-shirt collection.",
       "priority": "high",
       "status": "In Progress",
-      "order": 2
+      "order": 3
     },
     {
       "id": "3",
@@ -22,13 +22,13 @@
       "description": "Compress and resize large images for faster loading.",
       "priority": "low",
       "status": "Done",
-      "order": 1
+      "order": 2
     },
     {
       "id": "4",
       "title": "list",
       "description": "Implement authentication using JWT and cookies.",
-      "priority": "moyen",
+      "priority": "high",
       "status": "In Progress",
       "order": 1
     },
@@ -38,7 +38,7 @@
       "description": "Resolve toggle animation issue on small screen",
       "priority": "medium",
       "status": "Done",
-      "order": 2
+      "order": 3
     },
     {
       "id": "7",
@@ -54,15 +54,15 @@
       "description": "Add form with validation using react-hook-form and Yup.",
       "priority": "high",
       "status": "Done",
-      "order": 3
+      "order": 5
     },
     {
       "id": "9",
       "title": "Fix search results",
       "description": "Display search results as cards with clean UI.",
       "priority": "medium",
-      "status": "Done",
-      "order": 4
+      "status": "In Progress",
+      "order": 5
     },
     {
       "id": "10",
@@ -73,21 +73,13 @@
       "order": 3
     },
     {
-      "id": "2ba0",
-      "title": "Test 2222",
-      "description": "Test",
-      "priority": "high",
-      "status": "In Progress",
-      "order": 4,
-      "deleted": true
-    },
-    {
       "id": "c3bc",
       "title": "test 3",
       "description": "test bio 3",
-      "priority": "high",
-      "status": "To Do",
-      "order": 2
+      "priority": "low",
+      "status": "Done",
+      "order": 1,
+      "deleted": true
     },
     {
       "id": "f037",
@@ -95,14 +87,14 @@
       "description": "bio 1",
       "priority": "high",
       "status": "In Progress",
-      "order": 6,
+      "order": 7,
       "deleted": true
     },
     {
       "id": "f970",
       "title": "test 4",
       "description": "bio 4",
-      "priority": "high",
+      "priority": "medium",
       "status": "To Do",
       "order": 1
     },
@@ -111,8 +103,8 @@
       "title": "done 2",
       "description": "bio done 2",
       "priority": "high",
-      "status": "In Progress",
-      "order": 5
+      "status": "Done",
+      "order": 4
     },
     {
       "id": "e1b6",
@@ -120,7 +112,8 @@
       "description": "Home Page is Finished",
       "priority": "medium",
       "status": "In Progress",
-      "order": 0
+      "order": 0,
+      "deleted": true
     },
     {
       "id": "dee8",
@@ -136,8 +129,30 @@
       "title": "hamdoune",
       "description": "abssi",
       "priority": "high",
-      "status": "To Do",
+      "status": "In Progress",
       "order": 4
+    },
+    {
+      "id": "9223",
+      "title": "hello",
+      "description": "hello",
+      "priority": "low",
+      "status": "To Do",
+      "deleted": true
+    },
+    {
+      "id": "2851",
+      "title": "hello",
+      "description": "hello ",
+      "priority": "low",
+      "status": "Done"
+    },
+    {
+      "id": "bc0d",
+      "title": "yyyjj",
+      "description": "jiji",
+      "priority": "low",
+      "status": "To Do"
     }
   ]
 }
