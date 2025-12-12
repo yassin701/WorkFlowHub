@@ -34,7 +34,7 @@ export default function Delete({ task, onDeleted }) {
               <h2 className="modal-title">Confirmer la suppression</h2>
             </div>
 
-            <p>Are you sure you want to delete this task?</p>
+            <h6 className="delete-para">Are you sure you want to delete this task?</h6>
             <div className="delete-actions">
               <button onClick={handleConfirm} className="confirm-btn">
                 Confirm

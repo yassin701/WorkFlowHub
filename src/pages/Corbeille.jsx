@@ -79,7 +79,7 @@ export default function Corbeille() {
         </button>
 
         <div className="basket-title">
-          <h1>Basket</h1>
+          <h1>Trash</h1>
           
         </div>
 

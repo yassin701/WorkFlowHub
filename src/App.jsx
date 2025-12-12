@@ -17,7 +17,7 @@ function App() {
 
         <Route path="/" element={ <Login/>} />
         <Route path="/Home" element={< NavbarLayout><Home /></NavbarLayout> } />
-        <Route path="/Corbeille" element={<NavbarLayout><Corbeille /></NavbarLayout>} />
+        <Route path="/Corbeille" element={<Corbeille />} />
    </Routes>
   </BrowserRouter>
   )
