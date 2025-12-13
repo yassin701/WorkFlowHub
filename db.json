@@ -14,15 +14,15 @@
       "description": "Add detailed descriptions for the new t-shirt collection.",
       "priority": "high",
       "status": "Done",
-      "order": 1
+      "order": 0
     },
     {
       "id": "3",
       "title": "Optimize images",
       "description": "Compress and resize large images for faster loading.",
       "priority": "low",
-      "status": "Done",
-      "order": 4
+      "status": "In Progress",
+      "order": 2
     },
     {
       "id": "4",
@@ -30,7 +30,7 @@
       "description": "Implement authentication using JWT and cookies.",
       "priority": "high",
       "status": "In Progress",
-      "order": 2,
+      "order": 4,
       "deleted": true
     },
     {
@@ -39,15 +39,15 @@
       "description": "Resolve toggle animation issue on small screen",
       "priority": "high",
       "status": "Done",
-      "order": 5
+      "order": 2
     },
     {
       "id": "7",
       "title": "Add loading animation",
       "description": "Implement a smooth loading animation using Tailwind.",
       "priority": "low",
-      "status": "Done",
-      "order": 2
+      "status": "In Progress",
+      "order": 3
     },
     {
       "id": "8",
@@ -55,7 +55,7 @@
       "description": "Add form with validation using react-hook-form and Yup.",
       "priority": "high",
       "status": "In Progress",
-      "order": 4
+      "order": 6
     },
     {
       "id": "9",
@@ -63,7 +63,7 @@
       "description": "Display search results as cards with clean UI.",
       "priority": "high",
       "status": "Done",
-      "order": 0
+      "order": 1
     },
     {
       "id": "10",
@@ -80,7 +80,7 @@
       "priority": "low",
       "status": "To Do",
       "order": 3,
-      "deleted": false
+      "deleted": true
     },
     {
       "id": "f037",
@@ -88,7 +88,7 @@
       "description": "bio 1",
       "priority": "high",
       "status": "In Progress",
-      "order": 6,
+      "order": 8,
       "deleted": true
     },
     {
@@ -97,7 +97,7 @@
       "description": "bio 4",
       "priority": "medium",
       "status": "In Progress",
-      "order": 3,
+      "order": 5,
       "deleted": true
     },
     {
@@ -106,7 +106,7 @@
       "description": "bio done 2",
       "priority": "high",
       "status": "Done",
-      "order": 6
+      "order": 3
     },
     {
       "id": "e1b6",
@@ -132,7 +132,7 @@
       "description": "abssi",
       "priority": "high",
       "status": "In Progress",
-      "order": 5,
+      "order": 7,
       "deleted": true
     },
     {
@@ -154,8 +154,8 @@
     },
     {
       "id": "bc0d",
-      "title": "yyyjj",
-      "description": "jiji",
+      "title": "task",
+      "description": "hello h\n",
       "priority": "low",
       "status": "To Do",
       "order": 5
