@@ -1,8 +1,9 @@
-import "./AllColone.css";
-import Card from "./Card";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
+import { DragDropContext, Droppable } from "@hello-pangea/dnd";
+import Card from "./Card";
+import { motion, AnimatePresence } from "framer-motion";
+import { Circle, Clock, CheckCircle2 } from "lucide-react";
 
 export default function AllColone({ reload, onEdit }) {
   const [tasks, setTasks] = useState([]);
@@ -17,199 +18,124 @@ export default function AllColone({ reload, onEdit }) {
   }, [reload]);
 
   const handleDragEnd = (result) => {
-    console.log(result);
-
     const { source, destination, draggableId } = result;
     if (!destination) return;
+
+    if (
+      source.droppableId === destination.droppableId &&
+      source.index === destination.index
+    ) return;
 
     const newTasks = Array.from(tasks);
     let movedTask = null;
 
-    // --- SAME COLUMN ---
     if (source.droppableId === destination.droppableId) {
       const columnTasks = newTasks
         .filter((t) => t.status === source.droppableId)
         .sort((a, b) => a.order - b.order);
 
-      // Remove the dragged task and insert at new position
       const [removed] = columnTasks.splice(source.index, 1);
       columnTasks.splice(destination.index, 0, removed);
-      movedTask = removed;
 
-      // Update order for all tasks in this column
       columnTasks.forEach((task, index) => (task.order = index));
 
-      const otherTasks = newTasks.filter(
-        (t) => t.status !== source.droppableId
-      );
-      setTasks([...otherTasks, ...columnTasks]);
+      const otherTasks = newTasks.filter((t) => t.status !== source.droppableId);
+      const updatedTasks = [...otherTasks, ...columnTasks];
+      setTasks(updatedTasks);
 
-      // Update backend for all tasks in this column
       columnTasks.forEach((task) =>
-        axios.put(`http://localhost:3000/tasks/${task.id}`, task, {
-          headers: { "Content-Type": "application/json" },
-        })
+        axios.put(`http://localhost:3000/tasks/${task.id}`, task)
       );
-    }
-
-    // --- DIFFERENT COLUMN ---
-    else {
-      const taskIndex = newTasks.findIndex(
-        (t) => t.id.toString() === draggableId
-      );
+    } else {
+      const taskIndex = newTasks.findIndex((t) => t.id.toString() === draggableId);
       const [task] = newTasks.splice(taskIndex, 1);
 
       task.status = destination.droppableId;
-      movedTask = task;
 
       const destTasks = newTasks
         .filter((t) => t.status === destination.droppableId)
         .sort((a, b) => a.order - b.order);
 
       destTasks.splice(destination.index, 0, task);
-
-      // Update order in destination column
       destTasks.forEach((t, index) => (t.order = index));
 
-      const otherTasks = newTasks.filter(
-        (t) => t.status !== destination.droppableId
-      );
+      const otherTasks = newTasks.filter((t) => t.status !== destination.droppableId);
+      const updatedTasks = [...otherTasks, ...destTasks];
+      setTasks(updatedTasks);
 
-      setTasks([...otherTasks, ...destTasks]);
-
-      // Update backend for all tasks in destination column
       destTasks.forEach((t) =>
-        axios.put(`http://localhost:3000/tasks/${t.id}`, t, {
-          headers: { "Content-Type": "application/json" },
-        })
+        axios.put(`http://localhost:3000/tasks/${t.id}`, t)
       );
     }
   };
 
-  const toDo = tasks
-    .filter((t) => t.status === "To Do" && !t.deleted)
-    .sort((a, b) => a.order - b.order);
-  const inProgress = tasks
-    .filter((t) => t.status === "In Progress" && !t.deleted)
-    .sort((a, b) => a.order - b.order);
-  const done = tasks
-    .filter((t) => t.status === "Done" && !t.deleted)
-    .sort((a, b) => a.order - b.order);
+  const columns = [
+    { id: "To Do", title: "To Do", icon: Circle, color: "text-slate-400" },
+    { id: "In Progress", title: "In Progress", icon: Clock, color: "text-brand-indigo" },
+    { id: "Done", title: "Done", icon: CheckCircle2, color: "text-brand-cyan" }
+  ];
 
   return (
-    <>
+    <div className="h-full">
       {loading ? (
-        <div className="loading"></div>
+        <div className="flex items-center justify-center min-h-[400px]">
+          <div className="w-10 h-10 border-4 border-brand-cyan/30 border-t-brand-cyan rounded-full animate-spin"></div>
+        </div>
       ) : (
         <DragDropContext onDragEnd={handleDragEnd}>
-          <section className="AllColumns">
-            {/* TO DO */}
-            <Droppable droppableId="To Do">
-              {(provided) => (
-                <div
-                  className="Column"
-                  ref={provided.innerRef}
-                  {...provided.droppableProps}
-                >
-                  <div className="toDo">
-                    <h2>To Do</h2>
-                    <p>
-                      {toDo.length > 0 ? "+" : ""}
-                      {toDo.length}
-                    </p>
-                  </div>
-                  <div className="siperate"></div>
-                  <div className="cards">
-                    {toDo.length > 0 ? (
-                      toDo.map((task, index) => (
-                        <Card
-                          key={task.id}
-                          task={task}
-                          index={index}
-                          onEdit={onEdit}
-                        />
-                      ))
-                    ) : (
-                      <p>No task</p>
-                    )}
-                    {provided.placeholder}
+          <div className="flex gap-6 h-full items-start overflow-x-auto pb-6">
+            {columns.map((column) => (
+              <div key={column.id} className="flex-1 min-w-[320px] max-w-[400px]">
+                <div className="flex items-center justify-between mb-6 px-2">
+                  <div className="flex items-center gap-3">
+                    <column.icon className={`w-5 h-5 ${column.color}`} />
+                    <h2 className="text-lg font-bold text-slate-200">
+                      {column.title}
+                    </h2>
+                    <span className="px-2 py-0.5 rounded-md bg-white/5 text-xs text-slate-500 font-medium">
+                      {tasks.filter(t => t.status === column.id && !t.deleted).length}
+                    </span>
                   </div>
                 </div>
-              )}
-            </Droppable>
 
-            {/* IN PROGRESS */}
-            <Droppable droppableId="In Progress">
-              {(provided) => (
-                <div
-                  className="Column"
-                  ref={provided.innerRef}
-                  {...provided.droppableProps}
-                >
-                  <div className="Progress">
-                    <h2>In Progress</h2>
-                    <p>
-                      {inProgress.length > 0 ? "+" : ""}
-                      {inProgress.length}
-                    </p>
-                  </div>
-                  <div className="siperate"></div>
-                  <div className="cards">
-                    {inProgress.length > 0 ? (
-                      inProgress.map((task, index) => (
-                        <Card
-                          key={task.id}
-                          task={task}
-                          index={index}
-                          onEdit={onEdit}
-                        />
-                      ))
-                    ) : (
-                      <p>No task</p>
-                    )}
-                    {provided.placeholder}
-                  </div>
-                </div>
-              )}
-            </Droppable>
+                <Droppable droppableId={column.id}>
+                  {(provided, snapshot) => (
+                    <div
+                      ref={provided.innerRef}
+                      {...provided.droppableProps}
+                      className={`
+                        min-h-[500px] rounded-2xl p-2 transition-colors duration-200
+                        ${snapshot.isDraggingOver ? 'bg-white/[0.02]' : 'bg-transparent'}
+                      `}
+                    >
+                      <AnimatePresence>
+                        {tasks
+                          .filter((t) => t.status === column.id && !t.deleted)
+                          .sort((a, b) => a.order - b.order)
+                          .map((task, index) => (
+                            <Card
+                              key={task.id}
+                              task={task}
+                              index={index}
+                              onEdit={onEdit}
+                            />
+                          ))}
+                      </AnimatePresence>
+                      {provided.placeholder}
 
-            {/* DONE */}
-            <Droppable droppableId="Done">
-              {(provided) => (
-                <div
-                  className="Column"
-                  ref={provided.innerRef}
-                  {...provided.droppableProps}
-                >
-                  <div className="Done">
-                    <h2>Done</h2>
-                    <p>
-                      {done.length > 0 ? "+" : ""}
-                      {done.length}
-                    </p>
-                  </div>
-                  <div className="siperate"></div>
-                  <div className="cards">
-                    {done.length > 0 ? (
-                      done.map((task, index) => (
-                        <Card
-                          key={task.id}
-                          task={task}
-                          index={index}
-                          onEdit={onEdit}
-                        />
-                      ))
-                    ) : (
-                      <p>No task</p>
-                    )}
-                    {provided.placeholder}
-                  </div>
-                </div>
-              )}
-            </Droppable>
-          </section>
+                      {tasks.filter((t) => t.status === column.id && !t.deleted).length === 0 && !snapshot.isDraggingOver && (
+                        <div className="flex flex-col items-center justify-center py-12 border-2 border-dashed border-white/5 rounded-2xl">
+                          <p className="text-sm text-slate-600">No tasks here</p>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </Droppable>
+              </div>
+            ))}
+          </div>
         </DragDropContext>
       )}
-    </>
+    </div>
   );
 }

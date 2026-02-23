@@ -1,15 +1,12 @@
-import React from 'react';
-import Navbar from './Navbar';
+import Sidebar from './Sidebar'
 
-const NavbarLayout = ({ children }) => {
+export default function NavbarLayout({ children, onLogout }) {
     return (
-        <div>
-            
-            <Navbar />
-            {children}
+        <div className="flex min-h-screen bg-transparent">
+            <Sidebar onLogout={onLogout} />
+            <main className="flex-1 ml-64 p-8 transition-all duration-300">
+                {children}
+            </main>
         </div>
-    );
+    )
 }
-
-export default NavbarLayout;
-

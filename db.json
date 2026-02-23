@@ -21,7 +21,7 @@
       "title": "Optimize images",
       "description": "Compress and resize large images for faster loading.",
       "priority": "low",
-      "status": "In Progress",
+      "status": "Done",
       "order": 2
     },
     {
@@ -39,7 +39,8 @@
       "description": "Resolve toggle animation issue on small screen",
       "priority": "high",
       "status": "Done",
-      "order": 2
+      "order": 4,
+      "deleted": true
     },
     {
       "id": "7",
@@ -54,8 +55,8 @@
       "title": "Create contact form",
       "description": "Add form with validation using react-hook-form and Yup.",
       "priority": "high",
-      "status": "In Progress",
-      "order": 6
+      "status": "Done",
+      "order": 1
     },
     {
       "id": "9",
@@ -63,7 +64,8 @@
       "description": "Display search results as cards with clean UI.",
       "priority": "high",
       "status": "Done",
-      "order": 1
+      "order": 3,
+      "deleted": true
     },
     {
       "id": "10",
@@ -88,7 +90,7 @@
       "description": "bio 1",
       "priority": "high",
       "status": "In Progress",
-      "order": 8,
+      "order": 7,
       "deleted": true
     },
     {
@@ -106,7 +108,8 @@
       "description": "bio done 2",
       "priority": "high",
       "status": "Done",
-      "order": 3
+      "order": 5,
+      "deleted": true
     },
     {
       "id": "e1b6",
@@ -114,7 +117,7 @@
       "description": "Home Page is Finished",
       "priority": "medium",
       "status": "In Progress",
-      "order": 1,
+      "order": 2,
       "deleted": true
     },
     {
@@ -122,8 +125,8 @@
       "title": "To Do",
       "description": "To Do",
       "priority": "high",
-      "status": "To Do",
-      "order": 2,
+      "status": "In Progress",
+      "order": 1,
       "deleted": false
     },
     {
@@ -132,7 +135,7 @@
       "description": "abssi",
       "priority": "high",
       "status": "In Progress",
-      "order": 7,
+      "order": 6,
       "deleted": true
     },
     {
@@ -159,6 +162,16 @@
       "priority": "low",
       "status": "To Do",
       "order": 5
+    },
+    {
+      "id": "00e9",
+      "title": "hello",
+      "description": "hello",
+      "priority": "high",
+      "status": "To Do",
+      "order": 6,
+      "deleted": false,
+      "createdAt": "2026-02-23T00:52:42.440Z"
     }
   ]
 }
